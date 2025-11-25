@@ -1,0 +1,72 @@
+
+===== SWAHILI Inflection Coverage Analysis =====
+
+[MT Analysis] - Model Translation
+Total tokens in MT: 21304
+MT unique forms matching known inflections: 231
+MT Inflection Coverage (ratio of matched unique forms to total tokens): 1.08%
+MT Inflection Loss: 98.92%
+
+[REF Analysis] - Human Reference
+Total tokens in REF: 21270
+REF unique forms matching known inflections: 263
+REF Inflection Coverage (ratio of matched unique forms to total tokens): 1.24%
+REF Inflection Loss (Baseline): 98.76%
+
+Sample MT forms that match: ['hivi', 'takatifu', 'humo', 'huo', 'mrefu']
+Sample REF forms that match: ['hivi', 'takatifu', 'huo', 'mrefu', 'walileta']
+========================================
+
+===== ZULU Inflection Coverage Analysis =====
+
+[MT Analysis] - Model Translation
+Total tokens in MT: 14959
+MT unique forms matching known inflections: 765
+MT Inflection Coverage (ratio of matched unique forms to total tokens): 5.11%
+MT Inflection Loss: 94.89%
+
+[REF Analysis] - Human Reference
+Total tokens in REF: 15811
+REF unique forms matching known inflections: 831
+REF Inflection Coverage (ratio of matched unique forms to total tokens): 5.26%
+REF Inflection Loss (Baseline): 94.74%
+
+Sample MT forms that match: ['izenzo', 'kuhle', 'kuncane', 'ukuvula', 'sifuna']
+Sample REF forms that match: ['izenzo', 'kuhle', 'kuncane', 'amane', 'zenze']
+========================================
+
+===== AMHARIC Inflection Coverage Analysis =====
+
+[MT Analysis] - Model Translation
+Total tokens in MT: 16859
+MT unique forms matching known inflections: 1529
+MT Inflection Coverage (ratio of matched unique forms to total tokens): 9.07%
+MT Inflection Loss: 90.93%
+
+[REF Analysis] - Human Reference
+Total tokens in REF: 17184
+REF unique forms matching known inflections: 1804
+REF Inflection Coverage (ratio of matched unique forms to total tokens): 10.50%
+REF Inflection Loss (Baseline): 89.50%
+
+Sample MT forms that match: ['ተጀምሯል', 'ገበያዎች', 'ታስሯል', 'እጆች', 'ትውልድ']
+Sample REF forms that match: ['መስክ', 'ምድሪቱ', 'ታስሯል', 'ይኑር', 'ዋናዎቹ']
+========================================
+
+===== URDU Inflection Coverage Analysis =====
+
+[MT Analysis] - Model Translation
+Total tokens in MT: 27071
+MT unique forms matching known inflections: 148
+MT Inflection Coverage (ratio of matched unique forms to total tokens): 0.55%
+MT Inflection Loss: 99.45%
+
+[REF Analysis] - Human Reference
+Total tokens in REF: 27638
+REF unique forms matching known inflections: 176
+REF Inflection Coverage (ratio of matched unique forms to total tokens): 0.64%
+REF Inflection Loss (Baseline): 99.36%
+
+Sample MT forms that match: ['لکھے', 'سوچ', 'سیکھنا', 'سالگرہ', 'سیب']
+Sample REF forms that match: ['لکھے', 'چاہ', 'سوچ', 'سیکھنا', 'سالگرہ']
+========================================

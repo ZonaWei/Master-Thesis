@@ -1,0 +1,130 @@
+Using device: cuda:0
+Loading NLLB Baseline Model: facebook/nllb-200-distilled-600M...
+
+================================================================================
+STARTING EVALUATION: ENG -> UR (NLLB Baseline)
+Source file: ./test_data/flores200_en.txt
+Reference file: ./test_data/flores200_ur.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (ENG -> UR)
+--------------------------------------------------
+| BLEU: 30.88
+| ChrF++: 40.94
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: ENG -> AM (NLLB Baseline)
+Source file: ./test_data/flores200_en.txt
+Reference file: ./test_data/flores200_am.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (ENG -> AM)
+--------------------------------------------------
+| BLEU: 15.66
+| ChrF++: 42.34
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: ENG -> SW (NLLB Baseline)
+Source file: ./test_data/flores200_en.txt
+Reference file: ./test_data/flores200_sw.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (ENG -> SW)
+--------------------------------------------------
+| BLEU: 58.02
+| ChrF++: 81.88
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: ENG -> ZU (NLLB Baseline)
+Source file: ./test_data/flores200_en.txt
+Reference file: ./test_data/flores200_zu.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (ENG -> ZU)
+--------------------------------------------------
+| BLEU: 10.34
+| ChrF++: 55.02
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: UR -> ENG (NLLB Baseline)
+Source file: ./test_data/flores200_ur.txt
+Reference file: ./test_data/flores200_en.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (UR -> ENG)
+--------------------------------------------------
+| BLEU: 38.32
+| ChrF++: 59.53
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: AM -> ENG (NLLB Baseline)
+Source file: ./test_data/flores200_am.txt
+Reference file: ./test_data/flores200_en.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (AM -> ENG)
+--------------------------------------------------
+| BLEU: 27.65
+| ChrF++: 32.64
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: SW -> ENG (NLLB Baseline)
+Source file: ./test_data/flores200_sw.txt
+Reference file: ./test_data/flores200_en.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (SW -> ENG)
+--------------------------------------------------
+| BLEU: 31.31
+| ChrF++: 53.92
+--------------------------------------------------
+FINISHED EVALUATION.
+
+================================================================================
+STARTING EVALUATION: ZU -> ENG (NLLB Baseline)
+Source file: ./test_data/flores200_zu.txt
+Reference file: ./test_data/flores200_en.txt
+================================================================================
+Total test samples loaded: 1012
+Starting generation (batch size: 32)...
+
+--------------------------------------------------
+| FINAL METRICS (ZU -> ENG)
+--------------------------------------------------
+| BLEU: 34.81
+| ChrF++: 34.66
+--------------------------------------------------
+FINISHED EVALUATION.

@@ -1,0 +1,6 @@
+nohup: ignoring input
+🚀 Launching sw on GPU 0 (log: run_sw.log)
+🚀 Launching zu on GPU 1 (log: run_zu.log)
+🚀 Launching am on GPU 2 (log: run_am.log)
+🚀 Launching ur on GPU 3 (log: run_ur.log)
+✅ All experiments launched in parallel!

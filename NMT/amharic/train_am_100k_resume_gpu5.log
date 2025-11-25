@@ -1,0 +1,9 @@
+nohup: ignoring input
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --resume_from_checkpoint ./am-100k-finetune/checkpoint-10000

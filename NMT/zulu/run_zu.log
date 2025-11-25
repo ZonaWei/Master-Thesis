@@ -1,0 +1,2121 @@
+========== Language: am (amh_Ethi) ==========
+----- Training am 1k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/am/train_1k.tsv --validation_file ./final_data2/am/validation.tsv
+✅ Finished training am-1k
+----- Evaluating am 1k -----
+--- Evaluating am 1k ---
+⚠️  No best model found, loading latest checkpoint instead: ./am-1k-finetune/checkpoint-24
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fb77758b9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb77758b9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb77758b9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb77758b9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 0152482a-0329-4db9-88f7-20e726a8c6c5)')
+✅ Finished evaluating am-1k
+
+----- Training am 5k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/am/train_5k.tsv --validation_file ./final_data2/am/validation.tsv
+✅ Finished training am-5k
+----- Evaluating am 5k -----
+--- Evaluating am 5k ---
+⚠️  No best model found, loading latest checkpoint instead: ./am-5k-finetune/checkpoint-120
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f3a41eeb9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3a41eeb9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3a41eeb9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3a41eeb9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 3c5a3bf9-1e4d-4903-a84b-19316ce98d5f)')
+✅ Finished evaluating am-5k
+
+----- Training am 25k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/am/train_25k.tsv --validation_file ./final_data2/am/validation.tsv
+✅ Finished training am-25k
+----- Evaluating am 25k -----
+--- Evaluating am 25k ---
+⚠️  No best model found, loading latest checkpoint instead: ./am-25k-finetune/checkpoint-588
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f3afb9179d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3afb9179d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3afb9179d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3afb9179d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 4d45d663-ceb9-4d4a-8d9a-a35fe7d4873a)')
+✅ Finished evaluating am-25k
+
+----- Training am 100k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/am/train_100k.tsv --validation_file ./final_data2/am/validation.tsv
+✅ Finished training am-100k
+----- Evaluating am 100k -----
+--- Evaluating am 100k ---
+⚠️  No best model found, loading latest checkpoint instead: ./am-100k-finetune/checkpoint-2346
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f69c8ac79d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f69c8ac79d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f69c8ac79d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f69c8ac79d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 9e318238-c3ae-45f7-96f9-5a49f69b1317)')
+✅ Finished evaluating am-100k
+
+----- Training am 500k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/am/train_500k.tsv --validation_file ./final_data2/am/validation.tsv
+✅ Finished training am-500k
+----- Evaluating am 500k -----
+--- Evaluating am 500k ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './am-500k-finetune'
+✅ Finished evaluating am-500k
+
+----- Training am 1M -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/am/train_1M.tsv --validation_file ./final_data2/am/validation.tsv
+✅ Finished training am-1M
+----- Evaluating am 1M -----
+--- Evaluating am 1M ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './am-1M-finetune'
+✅ Finished evaluating am-1M
+
+========== Language: sw (swh_Latn) ==========
+----- Training sw 1k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/sw/train_1k.tsv --validation_file ./final_data2/sw/validation.tsv
+✅ Finished training sw-1k
+----- Evaluating sw 1k -----
+--- Evaluating sw 1k ---
+⚠️  No best model found, loading latest checkpoint instead: ./sw-1k-finetune/checkpoint-24
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f464edd79d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f464edd79d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f464edd79d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f464edd79d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 2d51c1bf-2887-43f2-8a11-fdd76d185b9c)')
+✅ Finished evaluating sw-1k
+
+----- Training sw 5k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/sw/train_5k.tsv --validation_file ./final_data2/sw/validation.tsv
+✅ Finished training sw-5k
+----- Evaluating sw 5k -----
+--- Evaluating sw 5k ---
+⚠️  No best model found, loading latest checkpoint instead: ./sw-5k-finetune/checkpoint-120
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd47399f9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd47399f9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd47399f9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd47399f9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: ce256cb2-2da1-47fe-a6de-7728feaaeb7b)')
+✅ Finished evaluating sw-5k
+
+----- Training sw 25k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/sw/train_25k.tsv --validation_file ./final_data2/sw/validation.tsv
+✅ Finished training sw-25k
+----- Evaluating sw 25k -----
+--- Evaluating sw 25k ---
+⚠️  No best model found, loading latest checkpoint instead: ./sw-25k-finetune/checkpoint-588
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc6ad0df9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc6ad0df9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc6ad0df9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc6ad0df9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 35eab820-be7e-4648-8f80-e6193f3dba2d)')
+✅ Finished evaluating sw-25k
+
+----- Training sw 100k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/sw/train_100k.tsv --validation_file ./final_data2/sw/validation.tsv
+✅ Finished training sw-100k
+----- Evaluating sw 100k -----
+--- Evaluating sw 100k ---
+⚠️  No best model found, loading latest checkpoint instead: ./sw-100k-finetune/checkpoint-2346
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f93fe8c39d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f93fe8c39d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f93fe8c39d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f93fe8c39d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 631c2943-87d2-48d0-8d63-80278bd3c363)')
+✅ Finished evaluating sw-100k
+
+----- Training sw 500k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/sw/train_500k.tsv --validation_file ./final_data2/sw/validation.tsv
+✅ Finished training sw-500k
+----- Evaluating sw 500k -----
+--- Evaluating sw 500k ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './sw-500k-finetune'
+✅ Finished evaluating sw-500k
+
+----- Training sw 1M -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/sw/train_1M.tsv --validation_file ./final_data2/sw/validation.tsv
+✅ Finished training sw-1M
+----- Evaluating sw 1M -----
+--- Evaluating sw 1M ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './sw-1M-finetune'
+✅ Finished evaluating sw-1M
+
+========== Language: zu (zul_Latn) ==========
+----- Training zu 1k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/zu/train_1k.tsv --validation_file ./final_data2/zu/validation.tsv
+✅ Finished training zu-1k
+----- Evaluating zu 1k -----
+--- Evaluating zu 1k ---
+⚠️  No best model found, loading latest checkpoint instead: ./zu-1k-finetune/checkpoint-24
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fb65b9cb9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb65b9cb9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb65b9cb9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb65b9cb9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 1704ebcb-0bcd-47b0-9a9d-751d38c27278)')
+✅ Finished evaluating zu-1k
+
+----- Training zu 5k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/zu/train_5k.tsv --validation_file ./final_data2/zu/validation.tsv
+✅ Finished training zu-5k
+----- Evaluating zu 5k -----
+--- Evaluating zu 5k ---
+⚠️  No best model found, loading latest checkpoint instead: ./zu-5k-finetune/checkpoint-120
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc9ebbc79d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc9ebbc79d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc9ebbc79d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc9ebbc79d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: b47878b2-e60f-494b-873d-eb4fd12dca3a)')
+✅ Finished evaluating zu-5k
+
+----- Training zu 25k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/zu/train_25k.tsv --validation_file ./final_data2/zu/validation.tsv
+✅ Finished training zu-25k
+----- Evaluating zu 25k -----
+--- Evaluating zu 25k ---
+⚠️  No best model found, loading latest checkpoint instead: ./zu-25k-finetune/checkpoint-588
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd95270b9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd95270b9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd95270b9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd95270b9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 4d0ed7e1-615b-4bf0-90f6-8f126b2199a0)')
+✅ Finished evaluating zu-25k
+
+----- Training zu 100k -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/zu/train_100k.tsv --validation_file ./final_data2/zu/validation.tsv
+✅ Finished training zu-100k
+----- Evaluating zu 100k -----
+--- Evaluating zu 100k ---
+⚠️  No best model found, loading latest checkpoint instead: ./zu-100k-finetune/checkpoint-2346
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fb97a1d79d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb97a1d79d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb97a1d79d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fb97a1d79d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 5defddd4-9d40-424d-a752-af13e1f10677)')
+✅ Finished evaluating zu-100k
+
+----- Training zu 500k -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training zu-500k
+----- Evaluating zu 500k -----
+--- Evaluating zu 500k ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './zu-500k-finetune'
+✅ Finished evaluating zu-500k
+
+----- Training zu 1M -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training zu-1M
+----- Evaluating zu 1M -----
+--- Evaluating zu 1M ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './zu-1M-finetune'
+✅ Finished evaluating zu-1M
+
+========== Language: ur (urd_Arab) ==========
+----- Training ur 1k -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training ur-1k
+----- Evaluating ur 1k -----
+--- Evaluating ur 1k ---
+⚠️  No best model found, loading latest checkpoint instead: ./ur-1k-finetune/checkpoint-24
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7f089b9cf9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f089b9cf9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f089b9cf9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f089b9cf9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: dde92016-6bb1-4184-aa43-a67e291b85a6)')
+✅ Finished evaluating ur-1k
+
+----- Training ur 5k -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training ur-5k
+----- Evaluating ur 5k -----
+--- Evaluating ur 5k ---
+⚠️  No best model found, loading latest checkpoint instead: ./ur-5k-finetune/checkpoint-120
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fa472bcb9d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa472bcb9d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa472bcb9d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa472bcb9d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 06318975-fda3-4ca7-bb3f-63666c2366c3)')
+✅ Finished evaluating ur-5k
+
+----- Training ur 25k -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training ur-25k
+----- Evaluating ur 25k -----
+--- Evaluating ur 25k ---
+⚠️  No best model found, loading latest checkpoint instead: ./ur-25k-finetune/checkpoint-588
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fc229f839d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc229f839d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc229f839d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fc229f839d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: b0846152-c532-45d7-95b0-d38afc1485b0)')
+✅ Finished evaluating ur-25k
+
+----- Training ur 100k -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training ur-100k
+----- Evaluating ur 100k -----
+--- Evaluating ur 100k ---
+⚠️  No best model found, loading latest checkpoint instead: ./ur-100k-finetune/checkpoint-2346
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    raise err
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+OSError: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 773, in urlopen
+    self._prepare_proxy(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 1042, in _prepare_proxy
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 753, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connection.py", line 213, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fd008f179d0>: Failed to establish a new connection: [Errno 113] No route to host
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd008f179d0>: Failed to establish a new connection: [Errno 113] No route to host'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd008f179d0>: Failed to establish a new connection: [Errno 113] No route to host')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 35, in main
+    base_model = AutoModelForSeq2SeqLM.from_pretrained(
+        "facebook/nllb-200-distilled-600M",
+        quantization_config=quant_config,
+        device_map="auto"
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 288, in _wrapper
+    return func(*args, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 5030, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+        transformers_explicit_filename=transformers_explicit_filename,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/modeling_utils.py", line 1216, in _get_resolved_checkpoint_files
+    not has_file(pretrained_model_name_or_path, safe_weights_name, **has_file_kwargs)
+        ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/transformers/utils/hub.py", line 679, in has_file
+    response = get_session().head(
+        hf_hub_url(path_or_repo, filename=filename, revision=revision, repo_type=repo_type),
+    ...<3 lines>...
+        timeout=10,
+    )
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 624, in head
+    return self.request("HEAD", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/huggingface_hub/utils/_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mwei/NMT_projects/MAenv/lib/python3.13/site-packages/requests/adapters.py", line 671, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: (MaxRetryError("HTTPSConnectionPool(host='huggingface.co', port=443): Max retries exceeded with url: /facebook/nllb-200-distilled-600M/resolve/main/model.safetensors (Caused by ProxyError('Unable to connect to proxy', NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fd008f179d0>: Failed to establish a new connection: [Errno 113] No route to host')))"), '(Request ID: 23fc3cbb-9fca-487e-bb91-009f5149c187)')
+✅ Finished evaluating ur-100k
+
+----- Training ur 500k -----
+  File "/home/mwei/NMT_projects/train.py", line 48
+    raise FileNotFoundError(f"
+                            ^
+SyntaxError: unterminated f-string literal (detected at line 48)
+✅ Finished training ur-500k
+----- Evaluating ur 500k -----
+--- Evaluating ur 500k ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './ur-500k-finetune'
+✅ Finished evaluating ur-500k
+
+----- Training ur 1M -----
+usage: train.py [-h] [--model_name MODEL_NAME]
+                [--data_base_path DATA_BASE_PATH] --lang LANG
+                --data_size DATA_SIZE --src_lang_code SRC_LANG_CODE
+                [--tgt_lang_code TGT_LANG_CODE] [--epochs EPOCHS]
+                [--batch_size BATCH_SIZE]
+                [--accumulation_steps ACCUMULATION_STEPS]
+                [--learning_rate LEARNING_RATE] [--eval_steps EVAL_STEPS]
+train.py: error: unrecognized arguments: --data_dir ./final_data2/ur/train_1M.tsv --validation_file ./final_data2/ur/validation.tsv
+✅ Finished training ur-1M
+----- Evaluating ur 1M -----
+--- Evaluating ur 1M ---
+Traceback (most recent call last):
+  File "/home/mwei/NMT_projects/evaluate.py", line 87, in <module>
+    main(args)
+    ~~~~^^^^^^
+  File "/home/mwei/NMT_projects/evaluate.py", line 32, in main
+    model_path = find_best_or_latest_checkpoint(model_path)
+  File "/home/mwei/NMT_projects/evaluate.py", line 15, in find_best_or_latest_checkpoint
+    any(fname.startswith("pytorch_model") for fname in os.listdir(model_path_base)):
+                                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './ur-1M-finetune'
+✅ Finished evaluating ur-1M
+
+========== All Experiments Completed ✅ ==========

@@ -1,0 +1,560 @@
+[1]
+Original: “ኣብ'ዚ እዋን ናይ 4 ወርሒ ዕድመ ዝገበሩ ኣናጹ፣ ሕማም ሽኮር ዝነበሮም ግን ከኣ ሕጂ ዘይብሎም ከምዘለና ሓቢሩ፣” ወሲኩ ሓቢሩ
+Back: ኣብዚ ግዜ፣ ኣብ ኣሰትራር ዝነብሩ ኣርባዕተ ወርሒ ዝበለሉ ቆልዑ ካብ ሕማም ክትሕምም ዝተ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes a situation where infants who are four months old had been suffering from a disease called "shikor" but are now reportedly no longer affected by it. 
+
+Sentence B, on the other hand, talks about infants who are four months old and are in a nursery, implying they are still at risk of getting sick, but it does not confirm whether they are currently sick or not.
+
+The key difference is that Sentence A indicates a past condition that has improved, while Sentence B suggests a potential or ongoing risk without confirming the current health status.
+
+[2]
+Original: ኣብ ሃሊፋክስ፣ ኖቫ ስኮቲያ ናይ ዶልሆሲ ዩኒቨርሲቲ ፕሮፌሰር ሕክምና ከምኡውን ናይ ማሕበር ሕሙማት ሽኮር ካናዳ ኣካቢ ጨንፈር ክሊኒካውን ሳይንሳውን፣ ዶክተር ኢሁድ ዩር ዝምርምር ስራሕ ገና ኣጸቢቁ ዘይማዕበለ ከምዝኮነ ኣጠንቂቑ።
+Back: ኣብ ሃሊፋክስ፣ ኖቫ ስኮቲያ፣ ዶክተር ይሁዳ ዩሬ፣ ፕሮፈሰር ሕክምና ኣብ ዳልሃውዚ ዩኒቨ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A provides detailed information about Dr. Yehuda Yure, mentioning his roles and affiliations, including being a professor at Dalhousie University, his involvement with the Canadian Pain Society, and his ongoing research work. It emphasizes his professional activities and contributions.
+
+Sentence B, on the other hand, is incomplete and only introduces Dr. Yehuda Yure as a professor of medicine at Dalhousie University without providing further context or details about his work or affiliations. Therefore, the two sentences do not convey the same meaning.
+
+[3]
+Original: ልክዕ ከም ካልኦት ምሁራን ንሱ እውን ናይ ሽኮር ሕማም ይሕከም ዶ ኣይሕከምን አብ ዝብል ይጠራጠር እዩ፣ ምኽንያቱም እቶም ዝተረኸቡ ውጺኢታት ንዓይነት 1 ሽኮር ዘለዎም ሰባት ምንም ዓይነት ለውጢ ከምጽኡ ስለዘይከኣሉ።
+Back: ከም ካልእ ሰብ ሞያት እሱም ምስ ግብሪ ስኳር ጥዕና ዝተኸሰተ እዩ ዶ ዝበልካ ዝግሕስ፣ ምኽ
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses a person who is uncertain about whether they can treat diabetes like other experts, mentioning that the results for people with type 1 diabetes have not shown any significant changes. 
+
+Sentence B, on the other hand, talks about someone who is skeptical about whether they are affected by diabetes like other professionals, implying a personal health concern rather than a professional capability or treatment outcome. 
+
+The focus of Sentence A is on the ability to treat diabetes and the outcomes, while Sentence B focuses on personal health concerns related to diabetes.
+
+[4]
+Original: ብሰኑይ፣ ኣብ ስዊድን ኣካዳሚ ናይ ኖቤል ናይ ስነ-ጽሑፍ ኮሚቴ ቀዋሚ ጸሓፊ ዝኾነት ሳራ ዳኒየስ፣ ኣብ ዝትኻየደ ናይ ስቬርጂስ ናይ ሬድዮ ፕሮግራም ከምዝበለቶ፣ አብ ስዊድን እቲ ኮሚቴ ንቦብ ዲላ ናይ 2016 ናይ ስነ-ጽሑፍ ናይ ኖቢል ሽልማት ብዛዕባ ምዕዋቱ ብቐጥታ ምርካብ ዘይከኣለን፣ ንዓኡ ንምርካብ ዝገበሮ ጻዕሪ ኣቋሪጹን።
+Back: ሰኑይ፣ ሳራ ዳኒየስ፣ ቋሚ ጸሓፊ ናይ ሎቤል ኮሚቴ ንስነ-ጽሑፍ ኣብ ስዊድን ኣካዳሚ፣ ኣብ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A provides detailed information about Sara Danius, mentioning her role as the permanent secretary of the Nobel Committee for Literature in Sweden and her involvement with a Swedish radio program. It also discusses the committee's decision not to comment on Bob Dylan's 2016 Nobel Prize in Literature.
+
+Sentence B, on the other hand, is incomplete and only introduces Sara Danius as the permanent secretary of the Nobel Committee for Literature in Sweden, without providing any additional context or information. Therefore, the two sentences do not convey the same meaning.
+
+[5]
+Original: ዳንየስ ከምዝበሎ፣ “ሕጂ ምንም ኣይንሰርሕን ዘለና፤ ናብቲ ናይ ቀረባ መሳርሕቱ ደዊለ ኢመይል ምስሰደድኩሉ ደስ ዝብል ግብረ መልሲ ሰዲድለይ ኣሎ። ንግዚኡ እዚ እኹል እዩ።”
+Back: እንደ ዳንኤል ኣለፈ፡ "ሕጂ ምንም ነገር ኣይነበረና፤ ኢመይል ንቀረባ ቤት ጽሕፈት ክልእክ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes a situation where Daniel is saying that they currently have nothing to work on, but he is happy to send a response to an email related to a nearby task. It implies that there is a specific task or email that needs a response.
+
+Sentence B, on the other hand, states that according to Daniel, there is nothing happening at the moment, and it mentions sending an email to a nearby office. It does not specify the content or purpose of the email, nor does it mention a response.
+
+The key difference is that Sentence A specifies sending a response to an email related to a task, while Sentence B simply mentions sending an email to an office without specifying the context or purpose.
+
+[6]
+Original: ቅድም ኢሉ፣ ናይ ሪንግ ዋና ኣካያዲ ስራሕ ጀሚ ሲሚኖፍ፣ መንቀሊ ሓሳብ ናይ'ቲ ኩባንያ ናቱ ናይ ማዕጾ ደወል ካብ ኣብ ጋራጁ ዘሎ ድንኳኑ ይስማዕ ስለዘይነበረ ምዃኑ ኣተንቢሁ።
+Back: ከዚ ከመምህር ዋና ኣርከተክት ናይ ሪንግ ፕሮጀክት ክኸውን በፊት፣ ጂም ሲሚኖፍ ተሰምዖ ኣ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes a situation where Jim Siminoff, the main inventor of the Ring project, was not aware of a phone call from the company's office because he was in a tent in the garage. It implies a lack of awareness due to his location.
+
+Sentence B, on the other hand, states that Jim Siminoff was heard before the main architect of the Ring project became involved. This suggests that Jim Siminoff was recognized or acknowledged prior to the involvement of the main architect, which is a different context from Sentence A.
+
+[7]
+Original: እሱ ናይ ዋይፋይ ማዕጾ ደወል ሰሪሑ ኢሉ ተዛሪቡ።
+Back: ንዋይ-ፋይ ሩተር ኣስተኻኽሎ እዩ ኣለዎ።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A: እሱ ናይ ዋይፋይ ማዕጾ ደወል ሰሪሑ ኢሉ ተዛሪቡ።
+This sentence means "He was told that the Wi-Fi office called him."
+
+Sentence B: ንዋይ-ፋይ ሩተር ኣስተኻኽሎ እዩ ኣለዎ።
+This sentence means "He is fixing the Wi-Fi router."
+
+The first sentence is about someone being informed of a call from the Wi-Fi office, while the second sentence is about someone fixing a Wi-Fi router. The actions and contexts are different.
+
+[8]
+Original: ሲሚኖፍ ኣብ 2013፣ ሻርክ ታንክ ኣብ ዝብል ክፍሊ ምስቐረበ እቲ መሸጣ ከምዝተማሓየሸ ገሊፁ።
+Back: ኣብ 2013 ሓደ ምስራሕተኛ ንግዲ ምስ ምሽራዕ ምስላ ምስ ምሽራዕ ምስላ ምስ ምሽራዕ ምስላ ምስ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses Siminoff's appearance on the show "Shark Tank" in 2013, where he presented his sales pitch and was rejected. 
+
+Sentence B, however, is incomplete and repetitive, mentioning a businessman in 2013 but not providing a clear or complete context or action. It does not convey the same information as Sentence A.
+
+[9]
+Original: ኣብ ዳሕረዋይ 2017, ሲሚኖፍ ኣብ ናይ ዕድጊ ቴሌቭዥን ቻናል QVC ተራእዩ።
+Back: ብመወዳእታ 2017 ሲሚኖፍ ኣብ ቻነል ቲቪ QVC ተመርኮዩ።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences convey the same information: that Siminoff appeared on the QVC television channel in 2017. The differences in wording, such as "ኣብ ዳሕረዋይ 2017" (in late 2017) versus "ብመወዳእታ 2017" (by the end of 2017), and "ተራእዩ" (was seen) versus "ተመርኮዩ" (was featured), do not change the overall meaning of the sentences. Both indicate the event of Siminoff's appearance on the QVC channel during the specified time.
+
+[10]
+Original: ሪንግ ምስ እቲ መፎኻኽርቱ ዝኾነ፣ ኤዲቲ ኮርፖሬሽን፣ ዝነበሮ ክሲ ፈቲሑዎ እዩ።
+Back: ዕምባቕ ብኩባንያ ኣቕሪቦ ነበር፡፡ እዚ ኣቕሪብካ ኣዳላይ ነበር።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses a ring that was opened with a key by a corporation named EDT. It implies a specific action involving a ring and a corporation.
+
+Sentence B, on the other hand, talks about a person who was close to a company and refers to someone as "my dear" or "my close one." It implies a personal relationship or proximity to a company, not an action involving a ring or a corporation.
+
+The sentences convey different meanings and contexts.
+
+[11]
+Original: ዋላኳ ሓደ ናይ ኢቦላ ሞት ዝቕንስ አብ ሙከራ ዝርከብ ክትባት ዝተረኽበ ይኹን፣ እስካብ ሕዚ ነቲ ነባር ሕማም ዝሕክም ዝኾነ ይኹን መድሓኒት ኣይተርኸበን።
+Back: እቲ ኤቦላ ንምኽንያት ዝተደላወ ክታሕዝ ወይ ክድንግ ዘለዎ ክታም ኣይተረኽበን፣ ብምምሕዳ
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences convey the idea that there is no available vaccine or cure for Ebola. Sentence A discusses the lack of a vaccine or treatment that has been proven to prevent or cure Ebola. Sentence B similarly states that there is no vaccine or cure available for Ebola. Both sentences emphasize the absence of a medical solution for the disease.
+
+[12]
+Original: ሓደ ዜድማፕ ዝተብሃለ ኣንቲባዲ ንጥረነገር፣ ኣብ መጀመርታ ኣብቲ ዘፈር ተስፋ ሂቡ ኔሩ፤ ዳሓር ግን ስሩዕ መጽናዕቲ ከም ዝሓበሮ፣ ኣብ ምክልኻል ሞት ካብቲ ዝተሓሰቦ ንታሕቲ ትሑት ዝኾነ ረብሓ ከምዘለዎ ኣመላኺቱ፡፡
+Back: ኣንቲቦዲ ዝተመሓላለፈ እንተኾነ መድሃኒት ድንጋጋ እንተምርካብ ተስፋ ዝተሰማማዕ ኣይተሰ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a specific antibody that initially showed promise in fighting a disease but later proved to be less effective, leading to a disappointing outcome. It describes a progression from hope to a realization of ineffectiveness.
+
+Sentence B, on the other hand, talks about a hypothetical situation where if an antibody is mixed with a drug, it might not meet expectations. It focuses on the potential ineffectiveness of a combination treatment rather than the progression of effectiveness over time.
+
+The key difference lies in the specific context and progression of events described in Sentence A versus the hypothetical scenario in Sentence B.
+
+[13]
+Original: ኣብ'ቲ PALM መጽናዕታዊ ፈተነ፣ Zmapp ከም መተሓላለዊ ኣገልጊሉ፣ እዚ ማለት ድማ ክኢላ ሳይንስ ከም መበገሲ ብምጥቃም ነቶም ሰለስተ ካልኦት ዓይነታት ሕክምና ምስኡ ኣወዳዲሮሞም ማለት እዩ።
+Back: ኣብ ፓልም ፈተና፣ ዝማፕ ከመ መቆጻጸሪ ኣገልግሎት ተጠቒሙ፣ እዚ ማለት ኣብ ሳይንስ ከም
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the use of Zmapp as a therapeutic agent in a clinical trial at PALM, indicating that it was used as a treatment alongside three other types of therapies. It emphasizes the role of Zmapp in the context of scientific advancement and its combination with other treatments.
+
+Sentence B, on the other hand, mentions the use of Zmapp in a trial at PALM but describes it as a "comparative service" rather than a therapeutic agent. The sentence is incomplete, but it suggests a different context or role for Zmapp, focusing on its use in comparison rather than as part of a treatment combination.
+
+The key difference lies in the role and context of Zmapp's use in the trials as described in each sentence.
+
+[14]
+Original: ናይ ኣሜሪካ ጂምናስቲክ ንደብዳቤ ኦሎምፒክ ኮሚቴ ኣሜሪካ ይድግፎ፤ ከምኡውን ስድራ ኦሎምፒክ ንኣትሌታትና ውሑስ ዝኾነ ከባቢ ንምፍጣር ዘሎ መሰረታዊ ድልየት ይቕቦሎ፡፡
+Back: ዝኽብር ኣመሪካዊ ፈደራሽን ጂምናስቲክስ ኮሚቴ ኦሎምፒክ ኣመሪካ ይደግፍ፡ ከምኡውን ስድ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the support provided by the American gymnastics committee to the Olympic committee and mentions the creation of a conducive environment for athletes, emphasizing foundational support for their development.
+
+Sentence B, on the other hand, starts by mentioning the support of the American gymnastics federation for the Olympic committee but does not provide further details or context, as the sentence is incomplete. Therefore, it lacks the additional information about creating a supportive environment for athletes that is present in Sentence A.
+
+[15]
+Original: ምስ'ቲ ድሌታት ኣትሌታትናን ክለባትናን፣ ስፖርትታቶም ካብ ምምሕያሽ ንላዕሊ ኣብ ድርጅትና ውሽጢ ትርጉም ብዘለዎ ለውጢ ንቕድሚት ብምስጓም ብዝሓሸ ክግልገሉ ይኽእሉ ዝብል መግለጺ ናይ USOC ንስማዕማዕ ኢና።
+Back: ንዓይ ምስማዕ ዝተደላይ መግለጺ ኣሜሪካዊ ኣስማማይ ኮሚቴ (USOC) ኣብ ድሕሪት ዝኾነ ድጋፍ ኣ
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses the role of female athletes and clubs in sports, emphasizing their potential to contribute to the advancement and improvement within an organization, as highlighted by a statement from the USOC.
+
+Sentence B, on the other hand, refers to a statement from the USOC that is considered important or noteworthy, but it does not provide specific details about the content of the statement or its context, unlike Sentence A.
+
+[16]
+Original: ዩኤስኤ ጂምናስቲክስ ናይ ላሪ ናሳር ዝነበረ ግፍዕታትን ብሂወት ዝተረፉ ከመይ ከይተፈለጡ ንነዊሕ እዋን ክኸዱ ከምዝነበሩ ዝገልጽ ዝኾነ ነገር ተሃልዩ ዝምርምር ዓርሱ ዝኸኣለ ምርመራ ይሕግዝን ለውጥታት ተሃልዮም እውን ይቕበል እዩ።
+Back: ዝርርብ ብዛዕባ ጥምየት ዝተፈጸመ ብዕድል ዶክተር ላሪ ናሳር ኣብ ናይ ኣመሪካ ጂምናስቲክ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses an investigation into the abuse and misconduct associated with Larry Nassar in the context of USA Gymnastics. It mentions the continuation of the investigation and the acceptance of changes.
+
+Sentence B, on the other hand, seems to be incomplete but starts by mentioning a discussion about the misconduct committed by Dr. Larry Nassar in the context of American gymnastics. However, it does not provide the same level of detail or context as Sentence A regarding the investigation or the outcomes.
+
+Therefore, while both sentences relate to Larry Nassar and gymnastics, they do not convey the same information or context.
+
+[17]
+Original: ጂምናስቲክ ኣሜሪካን ዩኤስኦሲንን ተመሳሳሊ ዕላማ ኣለዎም-- ንሱ እውን ነቲ ጂምናስተክስ ስፖርቲን ካልኦትን ንኣትሌታት ሕልሞም ንከሳኽዑ ድሕንነቱ ዝታሓለወን፣ ኣዎናተዊን መበረታትዒ ኩነታት ዝፈጥር ንኽኸውን ምግባር እዩ።
+Back: ኣመሪካዊ ጂምናስቲክስ ንኣመሪካ ኦለምፒክ ኮሚቴ ተመሳሳሊ ዕላማ ኣሎም፡ ንጂምናስትስን
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that both the American gymnastics and the USOC (United States Olympic Committee) have a similar goal, which is to create a safe and supportive environment for athletes to achieve their dreams.
+
+Sentence B, on the other hand, states that American gymnastics does not have a similar goal to the American Olympic Committee, without providing further context or details about their goals. 
+
+The key difference is that Sentence A emphasizes a shared goal, while Sentence B highlights a lack of shared goals.
+
+[18]
+Original: ኣብ 1960ታት ብርዘዚንስኪ ከም መማኸሪ ጆሴፍ ኬነዲ ኮይኑ ዝሰርሐ እንትኸውን ዳሓር ድማ አብ ሌኖን ጆንሶን ምምሕዳር ሰሪሑ እዩ።
+Back: ኣብ 1960ዝውድብ ኣብ ምምሕዳር ምስ ዮሃንስ ኤፍ. ኬነዲ ከም ሰነታር ኣብ ምምሕዳር ምስ ሊንዶ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that in the 1960s, the person worked as an advisor to Joseph Kennedy and later worked in the administration of Lyndon Johnson. 
+
+Sentence B, however, mentions working in the administration with Johannes F. Kennedy as a senator, which seems to be a mix-up of names and roles. The sentence structure and names do not align with historical facts, making it unclear and different in meaning from Sentence A.
+
+[19]
+Original: ኣብ 1976 አብ ዝተገበሩ መረፃት አብ ፖሊሲ ወፃኢ ኣማኻሪ ካርተር ኮይኑ ምስ ሰርሐ ዳሓር ድማ ካብ 1977 እስካብ 1981 ንሄንሪ ኪሲንገር ብምትካእ፣ ኣማኻሪ ብሄራዊ ሓለዋ (ኤን.ኤስ.ኤ) ኮይኑ ሰሪሑ እዩ።
+Back: ብዓመት 1976፣ ኣብ ጋርተር ኣስተዳደር ኣብ ውጹእ ፖሊሲ ከም ኣማኻሪ ምስ ሰርሕን ካብ 1977 ክሳ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that in 1976, during the changes in policy, someone was an external policy advisor in the Carter administration and later, from 1977 to 1981, replaced Henry Kissinger as a national security advisor.
+
+Sentence B, however, only mentions that in 1976, someone worked as an advisor in the Carter administration's foreign policy, but it does not mention the replacement of Henry Kissinger or the role of national security advisor from 1977 to 1981. The information about replacing Henry Kissinger and the specific role as a national security advisor is missing in Sentence B.
+
+[20]
+Original: ከም ኤን.ኤስ.ኤ፣ ኣብ ዛዕባ ዲፕሎማሲ ጉዳያት ወጻኢ፣ ንኣብነት ከም ስምምዕ 1978 መዐስከር ወይ ከዓ ካምፕ ዴቪድ፤ ኣብ መወዳእታ ዘመን 1970ታት ዝነበረ ርክብ ቻይናን ኣሜሪካን ስሩዕ ንምግባር፡ ንቅልውላው ተዓገትቲ ኢራን ምኽንያት ዝኾነ ናይ ኢራናውያን ዓመጽ ብ 1979፤ ከምኡውን ወራር ሕቡራት ሶቭየት ኣብ ልዕሊ ኣፍጋኒስታን ብ1979፤ ብዲፕሎማሲያዊ መንገዲ ንካርተር ሓጊዝዎ እዩ፡፡
+Back: ከም ኤን.ኤስ.ኤ. ኣብ ዓለም ውዳበ ውዳበ ውግእ ውግእ ውግእ ውግእ ውግእ ውግእ ውግእ ውግእ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses various historical diplomatic events and relationships, such as the Camp David Accords, the relationship between China and America in the 1970s, the Iranian Revolution of 1979, and the Soviet invasion of Afghanistan in 1979. It mentions these events in the context of diplomacy and international relations.
+
+Sentence B, on the other hand, appears to be a repetition of the phrase "ውዳበ ውግእ" (which can be translated as "conflict" or "war") without providing any specific context or details. It does not convey the same detailed historical and diplomatic information as Sentence A.
+
+[21]
+Original: ራያን ጎሲሊንግን ኤማ ስቶን ዝተሳተፍሉ ፊልሚ፣ ብኩሉ ዋና ዋና ምድባት ሕጹይ ኮይኑ።
+Back: ፊልም ዝተዋፈሩ ብራየን ጎስሊን ንእምማ ስቶን ኣብ እቲ ኣጠቓላሊ ግምት ተስፋህቲ ነቲ ግም
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that the film featuring Ryan Gosling and Emma Stone is primarily aimed at a young audience, suggesting that the main themes or content are suitable for children.
+
+Sentence B, on the other hand, mentions that the film starring Ryan Gosling and Emma Stone is generally considered to be hopeful or optimistic in its overall impression. It does not specify that the film is aimed at children or that the main themes are for a young audience.
+
+The focus of Sentence A is on the target audience being young, while Sentence B focuses on the general impression of the film being hopeful.
+
+[22]
+Original: ጋዞሊንን ሰቶንን ብሉጽ ተዋሳአይን ብልጽቲ ተዋሳኢትን ተባሂሎም ተሓጽዮም፡፡
+Back: ናይ ነዳዲ ነዳዲ ናብ ኤለክትሪክ መኪናታት እንተለውጡ እዮም።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the transition from gasoline and diesel vehicles to electric vehicles, indicating that they have been replaced or are being replaced. 
+
+Sentence B, on the other hand, states that if they switch from fuel-based vehicles to electric vehicles, it implies a conditional or potential change rather than a completed action. 
+
+The key difference is that Sentence A describes an action that has already taken place, while Sentence B describes a hypothetical or future action.
+
+[23]
+Original: እቶም ካልኦት ሕፀታት ብሉፅ ስእሊ፣ ዳይሬክተር፣ ሲኒማቶግራፊ፣ ከስተም ንድፊ፣ ፊልም ኢዲቲንግ፣ ዋና ምምዝጋብ፣ ፕሮዳክሽን ዲዛይን፣ድምጺ ኢዲቲንግ፣ ምቅንብባር ድምጺ፣ ዋና ናይ ስክሪን ጸዋታታን ዝሓወሱ እዮም።
+Back: ንቲ ፊልም ምምርባር ብዝለዓለ ዘርእስታታት ይሳተፉ፣ እቲ ዝርእስ ምምርባር፣ ሲነማቶግራ
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A lists various roles and aspects involved in film production, such as directing, cinematography, costume design, film editing, sound editing, and screen acting. It emphasizes the different components and people involved in the filmmaking process.
+
+Sentence B, on the other hand, mentions the involvement of various elements in film production but focuses on the participation in the film's creation process, specifically mentioning the script and cinematography. It seems to be more about the collaborative aspect of film production rather than listing specific roles.
+
+Overall, while both sentences relate to film production, they highlight different aspects and are not equivalent in meaning.
+
+[24]
+Original: ካብ “ኦድሽን (ዘ ፉልስ ሁ ድሪም)ን ሲቲ ስታርስ”ን ዝብል ፊልሚ ክልተ ደርፍታት ን“ብሉጻት ኦርጂናል ደርፍታት” ተሓርየን። ካብ ማንም ስቱድዮ ንላዕሊ—ላዮንስጌት ስቱድዮ 26 ሕፀታት ተሓጽዩ።
+Back: ክልተ ክፋላት ካብ ፊልም "Audition (The Fools Who Dream) City Stars" ን"ብሩህ ኣርእስቲ ክፋላት" ተማልሱ። ኣብ ውሽጢ 26 ፕ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses two scenes from the film "Audition (The Fools Who Dream) City Stars" being replaced with "original scenes" and mentions that 26 scenes were filmed at Lionsgate Studio.
+
+Sentence B states that two parts from the film "Audition (The Fools Who Dream) City Stars" were replaced with "bright scenes" and mentions something about 26, but the sentence is incomplete and does not provide full context.
+
+The key differences are in the description of the scenes being replaced and the incomplete information in Sentence B.
+
+[25]
+Original: ኣብ ሰንበት ረፋድ ናይ ዩናይትድ ስቴትስ ፕሬዝዳንት ዶናልድ ትራምፕ ብፀሓፊ ማዕከን ወረ ኣቢሎም ከምዝበልዎ ናይታ ሃገር ወታደራት ካብ ሶርያ ለቒቖም ከምዝወጹ ኣፍሊጦም።
+Back: ሰንበት፣ ፕሬዚደንት ዶናልድ ትራምፕ ካብ ናይ አሜሪካ መንግስቲ ሰራዊት ካብ ሲሪያ ክሰረ
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences convey the same core information: that on a Sunday, President Donald Trump announced or decided that the United States military forces would be withdrawn from Syria. Sentence A provides additional context by mentioning that the announcement was made through a central spokesperson, but the main message about the withdrawal of troops is consistent in both sentences.
+
+[26]
+Original: እቲ መግለፂ ትራምፕ ምስ ናይ ቱርኪ ፕረዚዳንት ጠይብ ኢርዶጋን ድሕሪ ብስልኪ ምዕላሉ እዩ ተገይሩ።
+Back: ናይ ትራምፕን ናይ ቱርክ ፕሬዚደንት ታይይፕ ኤርዶጋንን ምስትትዕምር ኣብ ምስል ስልጣን
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a meeting between Trump and the Turkish President Tayyip Erdoğan that took place after a phone call. It implies a sequence of events where a phone call led to a meeting.
+
+Sentence B, on the other hand, mentions Trump and the Turkish President Tayyip Erdoğan in the context of a meeting, but it does not specify the sequence or mention a phone call. It seems to focus more on the meeting itself rather than the events leading up to it.
+
+The key difference is the mention of the phone call in Sentence A, which is not present in Sentence B.
+
+[27]
+Original: ብመሰረት ዝተዋህበ ቃል፥ ሓለዋ ናይ'ቶም ናብ ሃገሮም ምምላስ ብሃገራት ኤውሮጳ ዝተኸልከሉ ዳዕሽ እሱራት ቱርኪ ሓላፍነት ክትወስደሉ እያ።
+Back: ብመሰረት እቲ ምምሕዳር፣ ቱርኪ ናይ መላለስ እስራኤል እስራኤል እስራኤል እስራኤል እስራ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a situation where Turkey is expected to take responsibility for the return of ISIS prisoners to their home countries, based on an agreement with European countries.
+
+Sentence B, however, seems to be incomplete or contains repeated words ("እስራኤል" repeated multiple times) and does not convey a clear or coherent meaning. It mentions Turkey and a management or administrative basis but does not provide a complete or understandable context.
+
+Therefore, the two sentences do not convey the same meaning.
+
+[28]
+Original: እዚ እንተወሓደ ዝተወሰኑ ዳይኖሶራት ክንቲት ኔሪዎም ዘረጋግጽ ጥራይ ዘይኮነ ፣ ክልስ ሓሳብ ኣቀዲሙ ተስፋሕፊሑ ኣሎ ፣ ግን ብሓፈሻ ከም ኣሰር ህይወት ዝርዝር ኣይከኣልን ከም ቀለም ከምኡውንሰለስተ ኵርናዕ መስርዕ ዝመሳሰሉ።
+Back: እዚ ሓደሽቲ ዝተረኽቡ ኣፍሪሳዊ ኣብረሃት ዝኾኑ ዝምልከት ኣይተማሃረሉን እዮም፣ እሞ ኣብ
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses dinosaurs, suggesting that they were not just large creatures but also had complex behaviors and possibly social structures. It implies that despite their size, they were not simple-minded and had a sophisticated way of life.
+
+Sentence B, on the other hand, seems to start discussing newly discovered African fossils or remains, indicating that they are not well understood or studied yet. However, the sentence is incomplete, so the full context and meaning are not entirely clear.
+
+The topics and contexts of the sentences are different, with Sentence A focusing on dinosaurs and their characteristics, while Sentence B appears to be about African archaeological or paleontological findings.
+
+[29]
+Original: ሳይንቲስታት ናይዚ እንስሣ ክንቲት ናይቸስቱንት ቡናዊ ኣብ ላዕሊ ብዝደብዘዘ ወይ ካሮት ዝመስል ናይ ውሽጢ ሕብሪ ከምዝነበረ ተዛሪቦም።
+Back: መዋሕቲ ተመሃሮ ኣብ መንእሰይ እዚ እንስሳ ኣዝዩ ዝመስል ናብ ካሮት ዝመስል ውሕስነት ኣለ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses scientists discovering a structure inside an insect that resembles a carrot, focusing on a specific scientific finding about the insect's internal structure.
+
+Sentence B, on the other hand, talks about students learning that this insect has a structure resembling a carrot, but it does not mention any scientific discovery or the context of the finding. The focus is on the educational aspect rather than the scientific discovery.
+
+[30]
+Original: እዚ ዝተረኽበ ቅሪት ናይ ኣዕዋፍ መንፈሪ ዝረአ ለውጢ የመልክት።
+Back: እዚ ብቐሊል ዝተረኽበ እንሰርሕ ኣለዋወጥ ኤቮሉሽነሪ ለውጢ ይሕብር።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses a "remnant of a spirit of ancestors" that has undergone a "visible change." It implies a transformation or alteration in something related to ancestral spirits.
+
+Sentence B, on the other hand, talks about a "slightly preserved remnant" that "undergoes an evolutionary change." This sentence suggests a gradual or evolutionary transformation, likely in a biological or developmental context.
+
+The key differences lie in the subjects and the nature of the changes described. Sentence A focuses on ancestral spirits and a visible change, while Sentence B refers to a remnant undergoing evolutionary change.
+
+[31]
+Original: ናይ ዳይኖሶር ክንቲታት ራቺስ ዝበሃል ብደንቢ ዝማዕበለ ናይ ማኣኸል ደጋፊ ዓምዲ ዘይብሎም፣ ግን ካሊኦት፟፟ ባርብስን ባርቡልስን ዝበሃሉ ናይ ክንቲት አካላት ዘለዉዎም ብምዃኖም፣ እቶም መጽናዕቲ ዘካየዱ ራቺስ ካብዞም ካልኦት አካላት ክንቲት ደሒሩ ዝመጸ ለውጢ እዩ ኢሎም የብራህርሁ።
+Back: ኣንፈሳት ዳይኖሶር፣ ብላባ ዝተለበሰ እዩ፣ ንመጻወቲ ኣይነበረን። እዚ ተመራማርያት ብም
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses the evolutionary changes in dinosaur wings, specifically mentioning that the wings of certain dinosaurs were not suitable for flying but were more similar to those of other species, leading to evolutionary changes. It focuses on the anatomical and evolutionary aspects of dinosaur wings.
+
+Sentence B, on the other hand, states that dinosaurs were covered in scales and were not suitable for games, implying a different context. It does not discuss evolutionary changes or specific anatomical features like wings.
+
+The focus and details in each sentence are different, leading to different meanings.
+
+[32]
+Original: ናይ'ቲ ክንቲት ቅርጺ ጥቅሙ ኣብ ክንዲ ንበረራ ንምምጥጣን መጠነ-ሙቐት ወይ መርኣዪ ፎርማ ከምዝነበረ ይእምት። እቶም ተመራመርቲ ከምዝብልዎ፣ እዚ ክፋል ጭራ ናይ ሓደ ንእሽተይ ዳይናሶር ዋላ'ኳ እንተኾነ፣ እቲ ናሙና ናይ ዓቢ ተሪር ክንቲታዊ ሽፋን እምበር ናይ ጫቚት ፈኲስ ክንቲት ኣይኮነን።
+Back: ንዑስ ኣቕሓ ኣብ ሓደ ኣቕሓ እንተምልከት እንተምንከር እንተምምር እንተምምር እንተምምር
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses the structure and function of a particular type of bone, suggesting it might belong to a young dinosaur rather than a large bird, based on its characteristics. It involves a scientific analysis of the bone's form and potential origin.
+
+Sentence B, on the other hand, appears to be incomplete or nonsensical as it repeats the phrase "እንተምምር" (which could mean "if we learn" or "if we teach") without providing a clear context or meaning. It does not relate to the content or context of Sentence A.
+
+[33]
+Original: እቶም ተመራመርቲ ከምዝብልዎ፣ እዚ ክፋል ጭራ ናይ ሓደ ንእሽተይ ዳይናሶር ዋላ'ኳ እንተኾነ፣ እቲ ናሙና ናይ ዓቢ ተሪር ክንቲታዊ ሽፋን እምበር ናይ ጫቚት ፈኲስ ክንቲት ኣይኮነን።
+Back: እንከሎ ምሁራን እዚ ይብሉ እዩ፣ እዚ ክፋል ኣጽጋም ንዓይኒ ዳይኖሰር ክኸውን ይኽእል እዩ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses skepticism about a part of a dinosaur, suggesting that while it might be a part of a young dinosaur, it is not a significant or large part like a big bone but rather a small fragment. It implies doubt about the significance of the find.
+
+Sentence B, on the other hand, mentions that experts claim this part could indeed belong to a dinosaur, indicating a possibility or likelihood that it is a dinosaur part.
+
+The two sentences convey different levels of certainty and perspectives regarding the identification of the dinosaur part.
+
+[34]
+Original: ትማሊ ንጉሆ አብ ቱርኪ ጋዚያንቴፕ አብ ዝርከብ ዋና ቤት ፅሕፈት ፖሊስ መኪና ዝፈንደአ ፈንጂ ክልተ ፖላዊስ ቐተሉ ልዕሊ ዒስራ ዝኾኑ ድማ ከቢድ መጉዳእቲ ኣብፂሑሎም እዩ።
+Back: ትማሊ ጠዋት ኣብ ቱርኪ ጋዚያንቴፕ፣ ባምታ ብምብፃዕ ናብ ዋና ፖሊስ ምሽግ ተበጽሖ ሓደ ፖ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes an incident where a police vehicle was attacked near the main police station in Gaziantep, Turkey, resulting in the death of two police officers and injuries to more than twenty people.
+
+Sentence B, on the other hand, mentions an event in the morning in Gaziantep, Turkey, where an explosion occurred near the main police station, but it only specifies that one police officer was affected, without mentioning deaths or the number of injured people.
+
+The key differences are in the details of the casualties and the time of the incident.
+
+[35]
+Original: ናይ'ቲ ኣመሓዳሪ ቤት-ጽሕፈት ከምዝበሎ ኣሰርተ ትሽዓተ ካብ'ቶም ዝተጎድኡ ፖሊስ እዮም ነይሮም።
+Back: እቲ መምርሒ ቤት ኣስተውዓሉ፣ ፖሊስ ኣብ ዝኾነ ቶም ኣብሓዲ ሰባተ ሰባት ኣሕዋት ኣሰርምዎ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that according to the administration office, nineteen of those who were injured are police officers. It provides specific information about the number of police officers among the injured.
+
+Sentence B, on the other hand, mentions that the police arrested seven individuals in a location referred to as "ቶም" (Tom). It does not mention anything about the number of injured police officers or any administrative report.
+
+The two sentences convey different information regarding the events involving the police.
+
+[36]
+Original: ፖሊስ ነቲ መጥቃዕቲ ሓላፍነት ዝወስድ ናይ ዳዕሽ (ISIL) ምልሻ እዩ ዝብል ጥርጣረ ከምዘለዎ ገልጹ።
+Back: ፖሊስ ጥቃቱ ብኢሰላም እንደተወሰደ ኣረጋገጸ።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that the police have a suspicion or claim ("ጥርጣረ") that the responsibility for the attack is claimed by Daesh (ISIL). It implies that there is a belief or assertion but not confirmed evidence.
+
+Sentence B, on the other hand, states that the police confirmed ("ኣረጋገጸ") that the attack was carried out by ISIL. This indicates a level of certainty and confirmation that is not present in Sentence A. 
+
+Therefore, the two sentences convey different levels of certainty regarding the involvement of ISIL in the attack.
+
+[37]
+Original: ፀሓይ ምስ ካልኦት ከዋኽብቲ ብሓንሳብ ኣብ ተመሳሳሊ መሰረታዊ መትከላት ከምትሰርሕ ፈለጡ-ብስርዓት ውሽጢ ዘለዉ ናይ ኩለን ከዋኽብቲ ምንቅስቓስ ብብርሃን ፣ብዑደንተን ንከምኡውን ብኻልእ ነገር ከምዝምርሓ ተፈሊጡ።
+Back: ፀሓይ ከም ካልኦት ኮኾብቲ ብዙሕ ዝበለ ኒውክለር ሬአክተር እያ፣ ኣብ ውሽጢ ዝርከብ ብብር
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A describes the sun as functioning similarly to other stars in terms of fundamental processes, emphasizing its role in the system and its interactions with other celestial bodies through light and other factors.
+
+Sentence B, on the other hand, directly compares the sun to a nuclear reactor, highlighting its internal nuclear reactions and the energy it emits.
+
+While both sentences discuss the sun's nature and its processes, Sentence A focuses on its similarity to other stars and its systemic role, whereas Sentence B emphasizes its nuclear characteristics.
+
+[38]
+Original: ድምቀትን ዙረትን ኮኾብ ምስ ዋሕዚ ፕላዝማ ዝምድና ዘለዎ ናይ ሓደ ኮኾብ ቁጽሪ ሮዝቢ ንምርካብ ይጠቅሙ።
+Back: ክብደትን ዝተዋሐበ ኮኾብ ንምርመራ ዝግበረ እተዋሕዶ ኮኾብ ክብደት እንተሃለወ ዝተጠቀመ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the relationship between the density and rotation of a star with its plasma and how these factors are used to determine the mass of a single star. It focuses on the scientific aspects of star analysis.
+
+Sentence B, on the other hand, talks about a star that has gained mass and is used for research purposes, specifically mentioning the mass of a united star. It emphasizes the process of a star gaining mass and its use in research.
+
+The two sentences address different aspects of stars and their properties, with Sentence A focusing on density and rotation, while Sentence B focuses on mass and research.
+
+[39]
+Original: እቲ ናይ ሮዝብይ ቑፅሪ ንኡሽተይ ብዝኾነ ቁጽሪ፣ እቲ ኮኾብ ምስ ማግኔታዊ ምቅይያር ክነፃፀር ከሎ ዝነአሰ ንቅሓት ይህልዎ።
+Back: ሮዝቤይ ቁጽሪ፣ እቲ ቁጽሪ ፕራይም እዩ ምስ እንተሆነ፣ ናይ ኮኾብ ማግነቲክ ምምሕዳር ክወ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a specific property of the "Rosebay number" (እቲ ናይ ሮዝብይ ቑፅሪ) and its potential interaction with a magnetic field (ማግኔታዊ ምቅይያር) in relation to a star (ኮኾብ). It suggests that this number, when it has a certain property, can influence the star's behavior.
+
+Sentence B, on the other hand, states that if the "Rosebay number" is a prime number (ፕራይም), it can affect the magnetic field of a star (ናይ ኮኾብ ማግነቲክ ምምሕዳር). The focus here is on the primality of the number and its effect on the star's magnetic field.
+
+The key difference is that Sentence A talks about a specific condition of the number and its interaction with a magnetic field, while Sentence B focuses on the number being prime and its effect on the magnetic field.
+
+[40]
+Original: አብዚ ጉዕዞ እዚ ኢውሳኪ ኣብ ቡዝሓት አጋጣሚታት ናብ ፀገም አትዩ።
+Back: ዝያዳ ኣስተማማኺ ፈታሂት ዝምልከት ጉዕዞ እዩ።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A: አብዚ ጉዕዞ እዚ ኢውሳኪ ኣብ ቡዝሓት አጋጣሚታት ናብ ፀገም አትዩ።
+This sentence suggests that the journey is not leading to problems despite many opportunities.
+
+Sentence B: ዝያዳ ኣስተማማኺ ፈታሂት ዝምልከት ጉዕዞ እዩ።
+This sentence indicates that the journey is one that involves additional learning or exploration.
+
+The two sentences convey different meanings: one focuses on the absence of problems despite opportunities, while the other emphasizes learning or exploration.
+
+[41]
+Original: ብናይ ባሕሪ ሰረቕቲ ተሰሪቑ፣ ኣብ ቲቤት ብዕቡድ ከልቢ ተነኺሱ፣ ኣብ ኔፓል ካብ መርዓ ኣምሊጡ ከምኡ ድማ አብ ህንዲ እውን ተኣሲሩ ነይሩ እዩ።
+Back: ብማዕበል ባሕሪ ተሰርቑ፣ በከባድ ልቢ በቲቤት ተደብቁ፣ ካብ ኔፓል ተሰርቑ፣ እንደዚም በ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes a sequence of events involving theft and movement across different locations: the thieves were caught at sea, then they were arrested in Tibet with heavy hearts, and they were captured in Nepal and also in India.
+
+Sentence B, on the other hand, describes the thieves being caught by a storm at sea, detained in Tibet with heavy hearts, and then stolen from Nepal. The sentence seems to be incomplete, but it suggests a different sequence and context of events compared to Sentence A.
+
+[42]
+Original: ናይ 802.11n ደረጃ ብኽልቲኡ ብ 2.4 Ghz ከምኡውን ብ 5.0 Ghz ፍሪኩዌንሲ ይሰርሕ።
+Back: 802.11n መደብ ብኩልሱ ኣብ 2.4 GHz ንእምበር 5.0 GHz ተመርምረ።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that the 802.11n standard operates on both 2.4 GHz and 5.0 GHz frequencies. It implies that the standard can work on both frequencies simultaneously or interchangeably.
+
+Sentence B, on the other hand, suggests that the 802.11n standard is evaluated or tested on the 2.4 GHz frequency rather than the 5.0 GHz frequency. It implies a comparison or preference for one frequency over the other.
+
+The key difference lies in the operation on both frequencies in Sentence A versus the evaluation or preference of one frequency over the other in Sentence B.
+
+[43]
+Original: እቲ ናይ ምድሪ ጣብያ ክልተ ራድዮታት እንተለዉ እዚ ካብ 802.11a ፣ 802.11b ከምኡውን 802.11g ብሓንሳብ ንድሕሪት ስኒት ክኸውን ኣኽኣለ።
+Back: ካብ 802.11a፣ 802.11b እንታይ'ውን 802.11g መደባት ንምምሕዳር ዝምልከት እንተሃለወ መስመር ተላላፊ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the capability of a certain type of land station to move forward with standards like 802.11a, 802.11b, and 802.11g. It implies that the station can support these standards.
+
+Sentence B, on the other hand, talks about the reference to standards 802.11a, 802.11b, and 802.11g in the context of a communication line, suggesting that these standards are mentioned or considered in the setup or operation of a transmission line.
+
+The focus of Sentence A is on the capability of a station, while Sentence B is about the mention or consideration of standards in a communication line.
+
+[44]
+Original: ናይ 802.11n ቅልጣፈ ካብቶም ቅድሚኡ ዝነበሩ ብርኡይ ዝለዓለ ሓሳባዊ ፍልቀት 600mbit/s ዝፈጥን እዩ።
+Back: 802.11n መደብ ከቀደመዶታቱ ብብዙሕ ዝበልጥ ቀሊል እዩ እንዳለው ኣብ ንዓይ 600 ሜጋቢት/ሰ ይኸው
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that the 802.11n standard is faster than its predecessors, with a theoretical maximum speed of 600 Mbit/s. It emphasizes the speed aspect.
+
+Sentence B, on the other hand, suggests that the 802.11n standard is significantly slower than its predecessors, which is incorrect. It seems to imply the opposite of what Sentence A is stating regarding speed.
+
+[45]
+Original: ዱቫል ዝተመርዐወን ክልተ ዓበይቲ ቆልዑት ስለዘለዉዎን ን ዋላ'ኳ እቲ ታሪኽ ንሚለር ዝምልከቶ ተኾነ ክምስጦ ኣይከኣለን።
+Back: ድሩዋል ብሁለት ዋና ውግእታት ምምስራት ኣብ ታሪኽ ኣብዚ ኣስተዋፅኦ ንምምላስ ዘይከኣል
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a specific event involving two major battles and suggests that the history related to this event cannot be ignored or forgotten. It implies a significant historical impact that should be remembered.
+
+Sentence B, on the other hand, states that the involvement of two main conflicts in history does not contribute to a particular understanding or explanation. It suggests a lack of significant impact or relevance in the historical context.
+
+The key difference lies in the perceived importance and impact of the events on history, with Sentence A emphasizing remembrance and significance, while Sentence B suggests a lack of contribution or relevance.
+
+[46]
+Original: ሚለር ንርኢቶ ክሕተት እንከሎ "ማይክ ኣብቲ እዋን ምስማዕ መጋባኣያ ብዙሕ እዩ ለፍሊፉ፤ እንዳተዳለውኩ ስለዝነበረ ብሓቂ እንታይ ይብል ከምዝነበረ ኣይሰማዕኽዎን" በለ፡፡
+Back: ሚለር እንደምስል ይሕስብ ነበር፣ "ማይክ ምስ ኣኼባታት ዘለዎ ግዜ ኣብ ምዝራብ እዩ፤ እቲ
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A suggests that Miller was unable to hear what Mike was saying during a meeting because Mike was speaking too much, implying that Miller was overwhelmed or distracted by the amount of talking.
+
+Sentence B implies that Miller thought Mike was always busy with meetings, suggesting that Mike was frequently occupied with meetings, but it does not mention any difficulty in hearing or understanding Mike.
+
+The key difference is that Sentence A focuses on Miller's inability to hear due to Mike's excessive talking, while Sentence B focuses on Mike's frequent involvement in meetings without mentioning any issues with hearing or understanding.
+
+[47]
+Original: "ኣብ 2005 ካብ ዝነበረ ብነፍሲ ወከፍ ልቀት ካርቦን ዳይኦክሳይድ ብዝርኣይ መልክዕ ኣብ 2020 ንምቕናስ ክንፍትን ኢና፣" ብምባል ሁ ሓቢሩ፡፡
+Back: ንምሕማም ካርቦን ዳይኦክሳይድ ናብ 2020 እንከልእ ኣብ 2005 ዝነበረ ፍርቂ ሓደ ግዜ ክነክስ እ
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences discuss the reduction of carbon dioxide emissions by 2020 compared to the levels in 2005. Sentence A mentions the intention to reduce emissions by a certain percentage by 2020, while Sentence B states the goal of reducing carbon dioxide emissions to half of what they were in 2005 by 2020. Both convey the same overall goal of reducing carbon emissions by 2020 relative to 2005 levels.
+
+[48]
+Original: ኣብ ናይ ቻይና ኢኮኖሚ ውጺኢት ተመስሪቶም እዮም ዝውሰኑ ብዝብል ነቲ ዝተገበረ ቅነሳ ኣይገለጾን።
+Back: ኣብ ናይ ቻይና ኢኮኖሚ ዝተነገረ ዕብየት ናይ ሓባር ኣይምስልን።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses the economic growth in China, stating that the reported progress does not reflect the actual development. It implies skepticism about the reported economic achievements.
+
+Sentence B, on the other hand, states that the economic news about China does not seem like an exaggeration. This suggests that the speaker does not perceive the economic reports as overstated.
+
+In summary, Sentence A expresses doubt about the authenticity of the economic growth, while Sentence B suggests that the economic news is not exaggerated.
+
+[49]
+Original: ሁ አብ ምምዕባል ንዝርከባ ሃገራት “መጀመሪያ ኣርሲሕኻ ዳሓር ምፅራግ ልምዲ ንከወግዳ” የበረታተዐን።
+Back: ንብልዕ ሃገራት ኣብ ምዕባለ ምምሕዳር ናይ "ቀደመ ተማሂር ኣብ ድሕሪትኡ ስራሕ" ምስጋና ኣ
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses the idea of prioritizing learning or training before engaging in work, specifically in the context of countries that are developing or in transition. It emphasizes the sequence of "first learn, then work."
+
+Sentence B, on the other hand, refers to the praise or commendation of countries in the context of governance, with a focus on the principle of "learn first, then work." While both sentences touch on the concept of learning before working, Sentence B highlights the commendation aspect, which is not present in Sentence A. Additionally, Sentence B is more focused on governance, whereas Sentence A is more general about the context of countries in transition.
+
+[50]
+Original: “ይኹን እምበር ልዕሊ ብርኪ ስልጣነኦም፣ሓላፍነቶምን ዓቅሞምን ዝኾኑ ግደታት ንኽወስዱ ክሕተቱ አይግባእን።” ወሲኹ ተዛሪቡ::
+Back: እሱ ተጨማሪ ኣሎ፡ እንታይ እንተዘይምልከት ሓላፍነታቶም ኣብርሃ ዝሓለፈ ውሳነ ምግባር የ
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the idea that even if someone has authority, responsibility, and power, it is not appropriate for them to make decisions that lead to harm or injustice. It emphasizes the inappropriateness of abusing power.
+
+Sentence B, on the other hand, mentions someone having additional information or context and questions what happens if they do not adhere to their responsibilities, referencing a past decision or action by someone named Abraham. It focuses on the consequences of not fulfilling responsibilities.
+
+The two sentences address different aspects of responsibility and decision-making, with Sentence A focusing on the misuse of power and Sentence B on the neglect of responsibilities.
+

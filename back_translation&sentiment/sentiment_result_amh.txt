@@ -1,0 +1,446 @@
+[1]
+Original: "አሁን የስኳር በሽተኛ ያልነበሩ አሁን ግን የሆኑ የ4-ወር-ዕድሜ ያላቸው አይጦች አሉን፣ አለ። "
+Back: "አሁን አራት ወር ዕድሜ ያላቸው አይጦች አሉ በፊት የማይነቃቅ ነበሩ ነገር ግን አሁን ናቸው ብሎ አለ።"
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that there are now four-month-old mice that were not diabetic before but have become diabetic now. 
+
+Sentence B, on the other hand, states that there are now four-month-old mice that were previously inactive or not moving but are now active or moving.
+
+The key difference lies in the condition being described: Sentence A talks about a change in diabetic status, while Sentence B talks about a change in activity or movement status.
+
+[2]
+Original: ዶክተር ኢሁድ ኡር፣ በሃሊፉሽ፣ ኖቫስኮሽያ ውስጥ በሚገኘው በዳልሃውዚ ዩኒቨርሲቲ የህክምና ፕሮፌሰር፣ እና የካናዳዊ የስኳር ህመ ማህበር የክሊኒካዊ እና ሳይንሳዊ ክፍል ሊቀመንበር ጥናቱ ገና በጅማሬ ወቅቱ እንደሆነ አስታውቋል።
+Back: ዶክተር ኢሁድ ኡር፣ በኖቫ ስኮሽያ ሃሊፋክስ ባለችው ዳልሄውዚ ዩኒቨርሲቲ የሕክምና ፕሮፌሰር እና የካናዳዊት የስኳር በሽታ ማህበር የክሊኒካዊ እና ሳይንሳዊ ክፍል ሊቀመንበር ሆነው የሚገኙ በሆኑት ጥናት ገና በመጀመሪያ ደረጃ መሆኑን ገልጸዋል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the same information about Dr. Ehud Ur, who is a professor of medicine at Dalhousie University in Halifax, Nova Scotia, and the chair of the clinical and scientific section of the Canadian Diabetes Association. They both mention that the study is still in its early stages. The differences in wording and structure do not alter the overall meaning.
+
+[3]
+Original: ልክ እንደ ሌሎች ባለሙያዎች፣ አይነት 1 የስኳር በሽታ ላለባቸው ሰዎች እነዚህ ግኝቶች ምንም ጥቅም እንደሌላቸው በመገንዘብ የስኳር በሽታ ሊፈወስ የሚችል መሆኑን ይጠራጠራል።
+Back: እንደሌሎች ባለሙያዎች በመሆኑም እነዚህ ውሳኔዎች ለተወሰኑ የዳይያቤት ዓይነቶች ምንም አይደለም በማለት የዳይያቤትን መፍወስ እንደሚቻል ያስተውሉ ይጠይቃሉ።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences discuss skepticism among professionals regarding the effectiveness of certain findings or decisions for people with a specific type of diabetes (Type 1 diabetes in Sentence A and unspecified types in Sentence B). They both express doubt about the possibility of curing diabetes based on these findings or decisions.
+
+[4]
+Original: ሰኞ ዕለት፣ ሳራ ዳኒየስ፣ ለኖቤል ኮሚቴ ለስነ ጽሁፍ በስዊድናዊ አካዳሚ ቋሚ ጸሃፊ የሆነቸው፣ በስዊድን ውስጥ በስቨሪጅስ ሬድዮ ፕሮግራም ላይ ኮሚቴው፣ ቦብ ዲላንን ስለ በስነ ጽሁፍ የ2016 የኖቤል ሽልማቱን ስለማሸንፍ ማግኘት ስላልቻለ፣ እርሱን ለመድረስ ጥረቶችን እንሚያቋረጥ በግልጽ ተናገረ።
+Back: እሑድ ቀን፣ ሳራ ዳኒየስ፣ ለስነ-ጽሁፍ ኖቤል ኮሚቴ የስዊድን ተመራመሪ ጸሃፊ፣ በስዊድን የሬድዮ ፕሮግራም ላይ በግልጽ እንደተናገሩት ኮሚቴው በ2016 የስነ-ጽሁፍ የኖቤል ሽልማት ሽማግሌ በመሆኑ ለቦብ ዲላን ማሳወቅ አልቻለም።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A states that on Monday, Sara Danius, the permanent secretary of the Swedish Academy for the Nobel Committee for Literature, spoke on a Swedish radio program about the committee's inability to reach Bob Dylan regarding the 2016 Nobel Prize in Literature, and she clearly mentioned that efforts to contact him were being hindered.
+
+Sentence B, on the other hand, states that on Sunday, Sara Danius, the executive secretary of the Swedish Nobel Committee for Literature, spoke on a Swedish radio program and mentioned that the committee was unable to inform Bob Dylan about the 2016 Nobel Prize in Literature because he was elusive.
+
+The key differences are the days mentioned (Monday vs. Sunday), the titles of Sara Danius (permanent secretary vs. executive secretary), and the reasons for the committee's inability to contact Bob Dylan (efforts being hindered vs. his elusiveness).
+
+[5]
+Original: “አሁን ምንም እያደግን አይደለም። ለቅርብ ተባባሪው ደውያለሁ አና ኢሜይል ልክያለሁ እናም በጣም ተስማሚ መልሶችን ተቀብያለሁ። ለጊዜው፣ ይህ በእርግጥ በቂ ነው።” አለ ዳኒየስ።
+Back: "አሁን ምንም እድገት አናደርግም። ቅርብ አጋርን እደውላለሁ እና ኢሜል እልካለሁ፣ እና በጣም እርካታ የሆኑ ምላሾችን እያገኘሁ ነኝ። ለአሁን ይህ በቂ ነው።" ብሏል ዳንኤል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the same overall meaning: the speaker, Daniel, is not making any progress at the moment but is in communication with a close partner through calls and emails, receiving satisfactory responses, and considers this sufficient for now. The differences in wording do not alter the core message.
+
+[6]
+Original: ከዚህ ቀደም፣ የሪንግ ዋና ሥራ አስኪያጅ፣ ጄሚ ሲሚኖፍ፣ ኩባንያው የጀመው የበር ደውሉ መኪና ማቆሚያው ውስጥ በሚገኘው ሱቅ ውስጥ አልሰማ ሲለው እንደሆነ ተናግሯል።
+Back: ከዚህ በፊት፣ የቀለበቱ ዋነኛ አስተዳዳሪ ጄሚ ሲሚኖፍ፣ የኩባንያውን የመጀመሪያ ደወል በእንቁላል መደብር ውስጥ እንደሚገኝ አልሰማም ብሏል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A mentions that Jamie Siminoff, the chief executive of Ring, stated that he did not hear about the company's initial call being in a store located in a parking lot. 
+
+Sentence B, on the other hand, states that Jamie Siminoff, the main administrator of the ring, said he did not hear about the company's first call being located in an egg market.
+
+The key difference lies in the locations mentioned: Sentence A refers to a store in a parking lot, while Sentence B refers to an egg market.
+
+[7]
+Original: እሱ እንዳለው፣ የWiFi የበር ደውል ሰራ።
+Back: እንደ እሱ እንደሚለው የዋይፋይ ደወል ሆኗል።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A: እሱ እንዳለው፣ የWiFi የበር ደውል ሰራ።
+This sentence means "As he said, he made a WiFi doorbell."
+
+Sentence B: እንደ እሱ እንደሚለው የዋይፋይ ደወል ሆኗል።
+This sentence means "As he says, the WiFi doorbell is working."
+
+The key difference is that Sentence A talks about someone making a WiFi doorbell, while Sentence B talks about the WiFi doorbell functioning or being operational.
+
+[8]
+Original: ፓናሉ ለንግድ መጀመር ገንዘብ በተከለከለበት በ2013 በሻርክ ታንክ ምዕራፍ ላይ ከቀረበ ወዲህ ሽያጭ እንደጨመረ ሲሚኖፍ ተነግሯል።
+Back: እንደ ተነገረው ለማዕከሉ ሽያጭ ከሲሚኖፍ በ 2013 በሻርክ ታንክ ላይ ለአነስተኛ ድርጅት ሂሳብ ሲያቀርብ በኋላ እንደገና ተጨምሯል።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses how the sales of a product called "ሲሚኖፍ" (Siminoff) increased after it was presented on an episode of "Shark Tank" in 2013, where funding for starting a business was denied.
+
+Sentence B, on the other hand, talks about how the sales for a center increased again after Siminoff presented an account for a small business on "Shark Tank" in 2013.
+
+The key differences are:
+- Sentence A focuses on the increase in sales of Siminoff after a presentation where funding was denied.
+- Sentence B focuses on the increase in sales for a center after Siminoff presented an account for a small business. 
+
+The contexts and outcomes described in the sentences are different.
+
+[9]
+Original: በ2017 መጨረሻ ላይ፣ ሲሚኖፍ በሽያጭ የቴሌቪዥን ጣቢያ ላይ ቀርቦ ነበር።
+Back: በ2017 መጨረሻ ሲሚኖፍ በቴሌቪዥን ሽያጭ ቻናል ላይ ተለምዶ ነበር።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the idea that towards the end of 2017, Siminoff was featured on a television sales channel. The slight differences in wording do not change the overall meaning. Sentence A uses "በሽያጭ የቴሌቪዥን ጣቢያ" (on a sales television station), while Sentence B uses "በቴሌቪዥን ሽያጭ ቻናል" (on a television sales channel), but both refer to the same concept of a TV channel focused on sales.
+
+[10]
+Original: ሪንግ ከተፎካካሪ የደህንነት ኩባንያም ADT ኮርፖሬሽን፣ ጋር ክስ መስርቷል።
+Back: "ሪንግ ከደህንነት ኩባንያ ኤዲቲ ኮርፖሬሽን ጋር የፍርድ ጉዳይ አቀርበዋል።"
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the idea that Ring has initiated a legal case or lawsuit against the security company ADT Corporation. The slight differences in wording do not change the overall meaning. Sentence A uses "ክስ መስርቷል" (has filed a lawsuit), while Sentence B uses "የፍርድ ጉዳይ አቀርበዋል" (has presented a legal case), but both expressions refer to the act of taking legal action.
+
+[11]
+Original: አንደ የሙከራ ክትባት የኢቦላን ገዳይነት ቢቀንስም፣ እስካሁን፣ ነባር በሽታዎችን እንዲያክም አመቺ ሆኖ የቀረበ ምንም መድሃኒት የለም።
+Back: እንኳን የሙከራ ክትባት የኢቦላን ሞተኝነት ቢቀንስም፣ እስካሁን የአካባቢ በሽታዎችን ለመቀነስ ተስማሚ መድሃኒት የተቀረበ የለም።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the idea that although experimental vaccines may reduce the lethality of Ebola, there is still no suitable medicine available to reduce endemic diseases. The slight differences in wording, such as "ገዳይነት" (lethality) versus "ሞተኝነት" (mortality) and "ነባር በሽታዎች" (endemic diseases) versus "የአካባቢ በሽታዎች" (local diseases), do not change the overall meaning of the sentences.
+
+[12]
+Original: አንድ የጸረ እንግዳ አካል፣ ZMapp፣ በዚህ መስክ ላይ ተስፋን አሳይቶ ነበር፣ ግን መደበኛ ጥናቶች ሞትን ለመከላከል ከተፈለገው ጥቅም ያነሰ እንዳለው ያሳያል።
+Back: አንድ የውጭ አካል ዘማፕ፣ በዚህ መስክ ተስፋ እንደሚሰጥ አሳይቷል፣ ነገር ግን መደበኛ ጥናቶች ከሚፈለገው ያነሰ በመሞት መከላከል እንደማይሆን ያመለክታሉ።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences discuss ZMapp, an external body or agent, which initially showed promise in a certain field. However, standard studies indicate that it is less effective than desired in preventing death. The differences in wording do not change the overall meaning conveyed by both sentences.
+
+[13]
+Original: በPALM ሙከራ፣ ZMapp እንደ መቆጣጠሪያ ያገለግል ነበር፣ ማለት ተመራማሪዎች እንደ መነሻ ይጠቀሙበት እና ከሌሎች ሶስት ህክምናዎች ጋር ያነጻጽሩታል።
+Back: በPALM ሙከራ ውስጥ፣ ZMapp እንደ መቆጣጠሪያ ሊሆን ይታሰባል፣ ማለትም ምርምር ተመራማሪዎች እንደ መጀመሪያ መስመር ይጠቀሙበታል እና ከሌሎች ሶስት ሕክምናዎች ጋር ያነጻጽሩታል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences discuss the use of ZMapp in the context of the PALM trial, indicating that it serves as a control or reference point for researchers and is compared with three other treatments. The slight differences in wording do not change the overall meaning.
+
+[14]
+Original: የአሜሪካ ጂምናስቲ የዩናይትድ ስቴትስ ኦሎፒክ ኮሚቴ ደብዳቤ ይደግፋል እናም በሙሉ አስፈላጊነት የኦሎምፒክ ቤተሰብ ደህንነቱ የተጠበቀ አካባቢ ለሁሉም አትሌቶቻችን ማስተዋወቅ እንዳለበት ይቀበላል።
+Back: የአሜሪካ ኦሊምፒክ ኮሚቴ ከዩኤስኤ ጂምናስቲክስ የተላከውን ደብዳቤ ይደግፋል እና እንደ ኦሊምፒክ ቤተሰብ አካል ለሁሉም እንቅስቃሴ ተሳታፊዎቻችን ደህንነታቸውን ማረጋገጥ እንደሚገባ በፍጹም ይረዳል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that the United States Olympic Committee supports a letter from American gymnastics and emphasizes the importance of ensuring a safe environment for all athletes as part of the Olympic family.
+
+Sentence B, on the other hand, indicates that the American Olympic Committee supports a letter sent from USA Gymnastics and highlights the responsibility to ensure the safety of all participants as part of the Olympic family.
+
+The main difference lies in the emphasis and the entities involved. Sentence A focuses on the United States Olympic Committee's role in supporting the letter and ensuring a safe environment, while Sentence B emphasizes the American Olympic Committee's support for the letter and the responsibility to ensure participant safety. Additionally, the phrasing and focus on the entities differ slightly, which affects the overall meaning.
+
+[15]
+Original: የአተሌቶቻችን እና የክለቦቻችን ፍላጎቶች እና ስፖርታቸው፣ እንደገና ከማጽደቅ ይልቅ በድርጅታችን ውስጥ ትርጉም ባለው ለውጥ ወደፊት በመጓዝ የአትሌቶቻችን እና የክለቦቻችን ፍላጎቶች እና ስፖርታቸው በተሻለ ሊገለገሉ ይችላሉ፣ ከሚለው የ USOC መግለጫ እንስማማለን።
+Back: ከዩናይትድ ስቴትስ ኦሎምፒክ ኮሚቴ (USOC) መግለጫ ጋር እንስማማለን፣ የእኛ አትሌቶችና ክለቦች ፍላጎት እና ስፖርቶች በድርጅታችን ውስጥ ትልቅ ለውጥ በማምጣት ከመገንዘብ ይልቅ ይሻላሉ።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences express agreement with a statement from the USOC, emphasizing that the interests and sports of their athletes and clubs are better served by moving forward with meaningful change within their organization rather than merely maintaining the status quo. The core idea in both sentences is the preference for progress and improvement over simply affirming the current state.
+
+[16]
+Original: የ USA ጂምናስቲክስ በላሪ ናስር በሕይወት የተረፉት ሰዎች በድፍረት በተገለጸው የበደል መጠን ምላይ ምን ያህል ሳይመረመር ለረጅም ጊዜ ሊሄድ የነበረበትን ሁኔታን በደምብ ሊያብራራ የሚችል ገለልተኛ ምርመራን ይደግፋል እናም ማንኛውንም አስፈላጊ እና ተገቢ ለውጦችንም ይቀበላል።
+Back: የአሜሪካ ጂምናስቲክስ ማህበር ላሪ ናሳር ያደረገው ወንጀል ለረጅም ጊዜ እንዴት እንደሆነ ያስረዳ የተለየ ምርመራ እንዲኖር ይደግፋል እና ማንኛውም አስፈላጊ እና ተገቢ ለውጦችን ይቀበላል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences discuss the support for an independent investigation into the circumstances that allowed Larry Nassar's crimes to go unchecked for a long time within the USA Gymnastics organization. They also mention the acceptance of any necessary and appropriate changes. The main difference lies in the wording and structure, but the core meaning remains the same.
+
+[17]
+Original: የዩ.ኤስ.ኤ ጂምናስቲክስ እና USOC ተመሳሳይ ግቦች አሏቸው — የጂምናስቲክስ እና ሌሎች ስፖርቶች በተቻለ መጠን ህልማቸውን ለሚከተሉ አትሌቶች የተጠበቀ፣ አውንታዊ እና አበረታች አካባቢ ማድረግ።
+Back: አሜሪካ ጂምናስቲክስ እና የአሜሪካ ኦለምፒክ ኮሚቴ (USOC) ተመሳሳይ ዕላማዎች አላቸው፡- ለጂምናስቶች እና ሌሎች አትሌቶች ሕልሞቻቸውን በተቻለ መጠን ለማሳካት ደህንነታቸውን የሚጠብቅ ፣ የሚደግፍ እና የሚያበረታታ አካባቢ ማፍራት።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey that the U.S. Gymnastics and the USOC (United States Olympic Committee) share similar goals, which involve creating a safe, supportive, and empowering environment for gymnasts and other athletes to pursue their dreams to the fullest extent possible. The slight differences in wording do not alter the overall meaning.
+
+[18]
+Original: በ1960ዎቹ፣ ብርዜዚንስኪ ለ ጆን.ኤፍ ኬኔድ እና ለአማካሪዎቹ ይሰራ ነበር እና ከዚያ በኋላ ለ ሊንደን ቢ. ጆንሰን አስተዳደር።
+Back: እ.ኤ.አ በ1960ዎቹ ብረዝንስኪ ለጆን ኤፍ. ኬነዲ እና ለአማካሪዎቹ እንዲሁም በኋላ ለሊንዶን ቢ. ጆንሰን አስተዳደር ሠርቷል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey that during the 1960s, Brzezinski worked for John F. Kennedy and his advisors, and later for the administration of Lyndon B. Johnson. The slight differences in wording do not change the overall meaning of the sentences.
+
+[19]
+Original: በ1976 ምርጫዎች ካርተርን በውጪ ፖሊሲ አማከረ፣ ከዚያን ሄንሪ ኪሲንገርን በመተካት ከ1977 እስከ 1981 እንደ ብሄራዊ የደህንነት አማካሩ(NSA) አገልግሏል።
+Back: በ1976 ምርጫዎች ውስጥ በውጭ አገር ፖሊሲ ላይ ካርተርን ደግፎ ነበር፣ ከዚያ በሚቀጥለው ከ1977 እስከ 1981 ድረስ የብሄራዊ ደህንነት አማካሪ (NSA) አገልግሎት ሰጥቶ ሄንሪ ኪሲንጀርን ተከትሎ ነበር።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences describe the same sequence of events: during the 1976 elections, the subject supported Carter on foreign policy, and subsequently, from 1977 to 1981, served as the National Security Advisor (NSA), following Henry Kissinger. The differences in wording do not change the overall meaning of the sentences.
+
+[20]
+Original: እንደ NSA፣ እንደ ካምፕ ዴቪድ አኮርድስ፣ 1978፤ በ1970ዎች የአሜሪካ እና የቻይና ግንኙነትን መመለስ፤ የኢራን ታጋች ቀውስን የመራው የኢራን ርዕዮተ አለም፣ 1979፤ እና በአፍጋኒስታን የሶቭየት ወረራ፣ 1979 ያሉ የአለም ጉዳዪች በዲፕሎማሲ መንገድ ለማስተናገድ ካርተርን ረዳው።
+Back: እንደ ኤን.ኤስ.ኤ፣ የካምፕ ዴቪድ ስምምነቶች፣ 1978፣ በ1970ዎቹ ውስጥ የአሜሪካ-ቻይና ግንኙነት መመለስ፣ የኢራን አብዮት የመሪነው የኢራን ታስሮ መያዣ ክስተት፣ 1979፣ እና የሶቪዬት ወረራ ወደ አፍጋኒስታን፣ 1979፣ ካርተር በዲፕሎማሲ እነዚህን ዓለም አቀፍ ችግሮች ለመቀየር ተረድቷል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences discuss the same historical events and the role of Carter in addressing these global issues through diplomacy. They mention the NSA, the Camp David Accords of 1978, the restoration of US-China relations in the 1970s, the Iranian hostage crisis of 1979, and the Soviet invasion of Afghanistan in 1979. The slight differences in wording do not change the overall meaning.
+
+[21]
+Original: ራየን ጎሊንግ እና ኤማ ስቶን የሰሩበት ፊልም በሁሉም ዋና ምድቦች እጩነት አግኝተዋል።
+Back: እ.ኤ.አ. ራየን ጎስሊንግ እና ኤማ ስቶን የሰሩበት ፊልም በሁሉም ዋነኛ ምድቦች ውስጥ ተሾም ተደርጎ ነበር።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences convey the idea that a film made by Ryan Gosling and Emma Stone was nominated in all major categories. The difference lies in the verb forms and slight variations in phrasing, but the core meaning remains the same. Sentence A uses "እጩነት አግኝተዋል" (has received nominations), while Sentence B uses "ተሾም ተደርጎ ነበር" (was nominated), both indicating the film's recognition in major categories.
+
+[22]
+Original: ጎዝሊንግ እና ስቶንስ ለምርጥ ተዋናይ እና ሴት ተዋናይ ለአጩነት ቀርብዋል።
+Back: ጎስሊንግ እና ስቶንስ ለምርጥ ተዋናይ እና ተዋናይት ተሾሙ።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that "Gosling and Stones have been nominated for best actor and actress," indicating that they are candidates for an award but have not necessarily won it yet.
+
+Sentence B, on the other hand, states that "Gosling and Stones have been appointed as best actor and actress," suggesting that they have already been selected or awarded the titles. The difference lies in the stage of the process: nomination versus appointment.
+
+[23]
+Original: ሌሎቹ እጩዎች ምርጥ ምስል፣ ዳይሬክተር፣ ሲኒማቶግራፊ፣ የአልባሳት ዲዛይን፣ ለፊልም ኤዲቲንግ፣ የመጀመሪያ ውጤት፣ የምርት ዲዛይን፣ የድምጽ ኤዲቲንግ፣ የድምጽ ሚክሲንግ እና የመጀመሪያ ድርሰት ያጠቃልላሉ።
+Back: ከተሾሙት ሌሎች የተመረጡት የተሻለ ፊልም፣ የዳይሬክተር፣ ሲኒማቶግራፊ፣ የአልባሳት ንድፍ፣ የፊልም እትም፣ የመጀመሪያ ነገር ድምፅ፣ የምርት ንድፍ፣ የድምፅ እትም፣ የድምፅ ማዋል እና የመጀመሪያ የፅሁፍ ነው።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A lists categories related to film production, such as best picture, director, cinematography, costume design, film editing, production design, sound editing, sound mixing, and original score. It suggests that the nominees excel in these categories.
+
+Sentence B, on the other hand, mentions categories like best film, director, cinematography, costume design, film editing, original sound, production design, sound editing, sound mixing, and original screenplay. While there is some overlap, Sentence B includes "original screenplay" instead of "original score" and uses slightly different terms for some categories, which could imply different aspects of film production. Additionally, the phrasing and context suggest a focus on selected nominees rather than a general list of categories.
+
+[24]
+Original: ከፊሉ ሁለቱ ሙዚቃዎች፣ ኦዲሽን (ዘ ፉልስ ሁ ድሪም) እና ሲተ ኦፍ ስታርስ፣ ለምርጡ አዲስ ሙዚቃ እጩነት አግኝተዋል። ላየንስጌት ስቱዲዮ 26 እጩዎችን አገኝቷል — ከማንኛውም ስቱዲዮ የበለጠ።
+Back: ከፊልም የተወሰዱት ሁለቱ መዝሙሮች፣ ኦዲሽን (የሚሉት ሞኞች) እና የከተማ ኮከቦች፣ ለምርጥ ኦሪጂናል መዝሙር ተሾም ተቀምጠዋል። ላየንስጌት ከማንኛውም ሌላ ስቱዲዮ የበለጠ 26 እጩዎችን ተቀብሏል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A mentions two music pieces, "ኦዲሽን (ዘ ፉልስ ሁ ድሪም)" and "ሲተ ኦፍ ስታርስ," which have been nominated for the best new music. It also states that Lionsgate Studio has received more nominees than any other studio.
+
+Sentence B, on the other hand, refers to two songs, "ኦዲሽን (የሚሉት ሞኞች)" and "የከተማ ኮከቦች," which have been nominated for the best original song. It also mentions that Lionsgate has accepted 26 nominees, more than any other studio.
+
+The differences lie in the titles of the music pieces and the categories for which they are nominated. Additionally, Sentence B specifies the number of nominees accepted by Lionsgate, which is not explicitly stated in Sentence A.
+
+[25]
+Original: እሁድ ማለዳ ላይ የዩናይትድ ስቴትስ ፕሬዝዳንት ዶናልድ ትራምፕ በፕሬስ ፀሃፊው በኩል በሰጡት መግለጫ የአሜሪካ ወታደሮች ከሶሪያ እንደሚለቁ አስታውቀዋል።
+Back: እሑድ ጠዋት ላይ፣ የአሜሪካ ፕሬዚዳንት ዶናልድ ትራምፕ በጋሪ ጸሀፊው አስታውቆ አሜሪካዊ ወታደሮች ከሲሪያ እንደሚመለሱ አስታወቀ።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the same information: that on a Sunday morning, the President of the United States, Donald Trump, through his press secretary, announced that American soldiers would be withdrawing from Syria. The slight differences in wording do not change the overall meaning of the sentences.
+
+[26]
+Original: ማስታወቂያው የተነገረው ትራምፕ ከቱርክ ፕሬዝዳንት ሬሴፕ ታዪፕ ኤርዶጋን ጋር በስልክ ከተወያዩ በኋላ ነው።
+Back: የዚህ ማስታወቂያ ማውጣት በተርክ ፕሬዚዳንት ሬጄፕ ታይፕ ኤርዶጋን ጋር በስልክ ከተነጋገሩ በኋላ ነው፡፡
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the same meaning: the announcement was made after a phone conversation with Turkish President Recep Tayyip Erdoğan. The difference in wording does not change the overall meaning of the sentences.
+
+[27]
+Original: የአውሮፓ አገራት ወደ ሀገራቸው ለመመለስ ፈቃደኛ ባልሆኑበት፣ መግለጫው ቱርክ የተያዙትን የአይ ኤስ ተዋጊዎችን ጥበቃም ትረከባለች ብሏል።
+Back: ከአውሮፓ አገሮች ዜጋቸውን ለመመለስ እንደማይፈልጉ በመግለጫው ይነግራል፣ በዚህ ሁኔታ ነው የተያዙትን የአይስስ ተዋጊዎች መጠበቅ እንደማትቀጥል የተነገረው።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the idea that European countries are not willing to take back their citizens, and as a result, Turkey has stated that it will not continue to protect the captured ISIS fighters. Sentence A presents this information as a statement made by Turkey, while Sentence B describes it as a situation reported in a statement. Despite the slight difference in phrasing, the core meaning remains the same.
+
+[28]
+Original: ይህ ዳይኖሰሮች ላባ እንደነበራቸው፣ የተስፋፋ ጽንሰ ሃሳብ፣ ብቻ ሳይሆን ነገር ግን ቅሪት አካላት ሊያቀርቡ የማይችሉትን እንደ ቀለም እና ባለ ሶስት ልኬት አቀማመጥ አይነት ዝርዝሮችንም ያረጋግጣል።
+Back: ይህ ዳይኖሰሮች ላባ እንደነበራቸው ያለውን የተስፋ አሳልፎ የተሰራ ነዳጅ ብቻ አይደለም እንደሚያገኝ ሆኖ የተገኘ ነው፣ ነገር ግን እንደ ቀለም እና እንደ ሦስት ልኬት ዝርዝሮች ያሉ ዝርዝሮች ደግሞ የተገኙ ናቸው፣ ይህም ቅርፀ አስቀድሞ ማሳየት የማይችል ነው።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A discusses the idea that the notion of dinosaurs having feathers is a widespread hypothesis. It also mentions that fossils cannot provide certain details like color and three-dimensional arrangements.
+
+Sentence B, on the other hand, suggests that the idea of dinosaurs having feathers is not just a hopeful hypothesis but something that has been found. It also states that details like color and three-dimensional arrangements have been discovered, but these cannot be shown in their original form.
+
+The key difference lies in the interpretation of the evidence and the certainty of the findings regarding the feathers and other details.
+
+[29]
+Original: . የዚህ እንሰሳ የላባ ቀለም ደማቅ ቡናማ ከላይ እና ነጣ ወይም ብርትኳናማ ካታች ነው ብለዋል ተመራማሪዎች።
+Back: ተመራማሪዎች የዚህን እንስሳ ጥጉር ከላይ ጥቁር ቡናማ እንደሆነ እና ከታች ነጭ ወይም ብርቱካናማ እንደሆነ ተናግረዋል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes the animal as having a "dark brown" color on top and "white or orange" underneath. 
+
+Sentence B, on the other hand, describes the animal as having a "blackish brown" color on top and "white or orange" underneath.
+
+The difference lies in the description of the color on top: "dark brown" in Sentence A versus "blackish brown" in Sentence B.
+
+[30]
+Original: ግኝቱ በወፎች ውስጥ ስለ የላባ ዝግመተ ለውጥ እይታን ይሰጣል።
+Back: ይህ ማግኘት በወፎች ውስጥ የምህረብ ለውጥ ላይ ግንዛቤን ያበረክታል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a finding that provides insight into the evolutionary adaptation of camouflage in birds. It specifically mentions "የላባ ዝግመተ ለውጥ" which translates to "evolutionary adaptation of camouflage."
+
+Sentence B, on the other hand, talks about a finding that enhances understanding of network adaptation in birds. It uses the phrase "የምህረብ ለውጥ" which translates to "network adaptation."
+
+The two sentences refer to different types of adaptations: one is about camouflage, and the other is about network adaptation.
+
+[31]
+Original: የዳይነሶር ላባዎች የዳበረ ራቺስ የሚባል ዘንግ ስለሌለው፣ ነገር ግን ሌሎች የላባ ባህርያት — ባርብስ እና ባርቡልስ — ስላለው ተመራማሪዎች ራቺስ ከእነዚህ ሌሎች ባህርያት የቆየ ዝግመተ ለውጥ ውጤት እንደሆነ ይላሉ።
+Back: ከማህደረ ፍስሐ የተሰኘ ከሚባለው እንስሳ ጋር የተያያዘ የእንስሳ ቅሪት አልተገኘም፣ ነገር ግን ሌሎች የሚመስሉ የሚለዋወጡ እንደ ባርብስ እና ባርቡሌስ የተለያዩ መዋቅሮች ስለሚኖሩ ፣ ምርምር ተመራቾች ራኪስ ከእነዚህ ሌሎች መዋቅሮች የተጠበቀ የኢቮሉሽነሪ ውጤት ነው ብለው ያመናሉ።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the absence of a specific fossil called "የዳበረ ራቺስ" (Yedabere Rachis) related to dinosaur feathers, but mentions the presence of other feather characteristics like "ባርብስ" (Barbs) and "ባርቡልስ" (Barbules), leading researchers to conclude that rachis is an evolutionary result from these other characteristics.
+
+Sentence B, on the other hand, talks about the absence of a fossil related to an animal named "ማህደረ ፍስሐ" (Mahidere Fis'ha), but mentions the presence of similar characteristics like "ባርብስ" (Barbs) and "ባርቡሌስ" (Barbules) in different contexts, leading researchers to believe that rachis is an evolutionary result from these other contexts.
+
+The main difference lies in the specific subjects being discussed: Sentence A is about dinosaur feathers, while Sentence B is about an animal named "ማህደረ ፍስሐ".
+
+[32]
+Original: የላባዎቹ መዋቀር ለበረራ የሚውሉ ሳይሆን ለሙቀት መቆጣጠር ወይንም ለእያታ ነው። ተመራማሪዎች ይህ የልጅ ዳይኖሰር ጭራ ቢሆንም፣ ናሙናው የአዋቂ ላባዎች ስብስብ እንጂ የዶሮ እንዳልሆነ ተናግረዋል።
+Back: እንቅስቃሴው የሚሰራው ለመብረር ሳይሆን ለሙቀት መቆጣጠር ወይም ለማሳያ ነው። ተመራማሪዎች ይህ የታናሽ ዳይኖሰር ክሪስት ሊሆን ቢችልም የቆሻሻ ላም ይመስላል ሳይሉ የብልህ ላም ስብስብ ነው ብለዋል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the purpose of the movement of certain creatures, stating that it is not for flying but for regulating temperature or display. It mentions that researchers have identified this as a feature of a "child dinosaur" crest, and it is associated with a group of intelligent llamas, not chickens.
+
+Sentence B, on the other hand, also talks about the purpose of movement, indicating it is not for flying but for temperature regulation or display. However, it refers to a "small dinosaur crest" and suggests it might resemble a "waste llama" but concludes it is a group of intelligent llamas.
+
+The key differences lie in the specific terms used: "የላባዎቹ መዋቀር" (movement of llamas) versus "እንቅስቃሴው" (the movement), and "የልጅ ዳይኖሰር ጭራ" (child dinosaur crest) versus "የታናሽ ዳይኖሰር ክሪስት" (small dinosaur crest). Additionally, Sentence A mentions "የዶሮ" (chickens) while Sentence B mentions "የቆሻሻ ላም" (waste llama), which are different comparisons.
+
+[33]
+Original: ተመራማሪዎች ይህ የልጅ ዳይኖሰር ጭራ ቢሆንም፣ ናሙናው የአዋቂ ላባዎች ስብስብ እንጂ የዶሮ እንዳልሆነ ተናግረዋል።
+Back: ተመራማሪዎች በማስታወቅ ላይ እንደሆኑ ይህ የልጅ ዳይኖሰር ማሽከርከር ቢሆንም፣ እቅፉ የተነቃቃ እንስሶች ስብስብ ነው እንጂ ዶሮ አይደለም።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses a "የልጅ ዳይኖሰር ጭራ" (child's dinosaur crest) and mentions that the model is a collection of intelligent mammals, not a chicken. 
+
+Sentence B, on the other hand, talks about a "የልጅ ዳይኖሰር ማሽከርከር" (child's dinosaur ride) and states that the design is a collection of animated animals, not a chicken.
+
+The key differences lie in the specific aspects being described (crest vs. ride) and the type of animals mentioned (intelligent mammals vs. animated animals).
+
+[34]
+Original: በጋዚያንተፕ፣ ቱርክ ውስጥ በትናንትናው እለት በፖሊስ ዋና ጽህፈት ቤት ውስጥ በፈነዳው የመኪና ፈንጂ ሁለት ፖሊሶች ተገድለዋል እና ከሃያ በላይ ሰዎች ተጎደተዋል።
+Back: በቱርክ ጋዚያንቴፕ ውስጥ በፖሊስ ማዕከል ውስጥ በተነሳ የመኪና ቦምብ ፍንዳታ ሁለት ፖሊሶች ተገድለዋል እና ከሃያ በላይ ሰዎች ተጎድለዋል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences describe the same event: a car bomb explosion inside a police headquarters in Gaziantep, Turkey, resulting in the death of two police officers and injuries to more than twenty people. The differences in wording, such as "በፖሊስ ዋና ጽህፈት ቤት" versus "በፖሊስ ማዕከል" and "በፈነዳው የመኪና ፈንጂ" versus "በተነሳ የመኪና ቦምብ ፍንዳታ," do not change the overall meaning of the sentences.
+
+[35]
+Original: የአገረ ገዢው ቢሮ አስራ ዘጠኝ ፖሊስ መኮንኖች ተጎድተዋል ብሎ ተናገረ።
+Back: መንግስት ኃላፊ ዐሥራ ዘጠኝ ፖሊሶች ተጎድለዋል ብሏል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences convey the same information: a government official reported that nineteen police officers have been injured. The differences in wording, such as "የአገረ ገዢው ቢሮ" (the government office) versus "መንግስት ኃላፊ" (government official), and "ተናገረ" (said) versus "ብሏል" (reported), do not change the overall meaning of the sentences.
+
+[36]
+Original: ፖሊስ ጥቃቱን የፈጸመው ተጠርጣሪ የዴእሽ (ISIL) አማጺ ነው ብለው ተጠርጥረዋል።
+Back: ፖሊሶች በጥቃቱ ውስጥ የተጠረጠሩትን እስላማዊ መጥላቂ እንደሆነ አስታወቁ።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that the police have identified the suspect who carried out the attack as a member of ISIL (Islamic State of Iraq and the Levant).
+
+Sentence B, on the other hand, indicates that the police have announced that those involved in the attack are suspected to be Islamic extremists, but it does not specifically mention ISIL.
+
+The key difference is that Sentence A specifically attributes the attack to ISIL, while Sentence B refers more generally to Islamic extremists without specifying a particular group.
+
+[37]
+Original: ጸሀይ የሚሰራበት መሰረታዊ መርህ ለሎች ኮከቦች ከሚሰሩበት መርህ ጋር ተመሳሳይ እንደሆነ አግኝተዋል፡ በስርዓቱ ውስጥ የሁሉንም ኮከቦች እንቅስቃሴ የሚመራው በማንፀባረቅ፣ በመሽከርከራቸው እና በሌላ በምንም እንዳልሆነ ተገኝቷል።
+Back: እንደ ሌሎች ኮከቦች የሚሰራው የፀሐይ መሠረታዊ ሂደት እንደ ሌሎች ኮከቦች ተመሳሳይ መሆኑ ተገኝቷል፤ በስርዓቱ ውስጥ ያሉ ሁሉም ኮከቦች እንደ ፍዩዥን በእነርሱ ዙርያ እንደሚሽከረከሩ እንጂ ሌላ ነገር እንደሌለ ተገኝቷል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the idea that the fundamental process by which the sun operates is similar to that of other stars. They also state that within the system, the movement of all stars is governed by fusion and not by any other means. The wording and structure differ slightly, but the core meaning remains the same.
+
+[38]
+Original: የብርሃን መጠን እና መሽከርከሩ አንድላይ ከፕላዝማ ፍሰት ጋር የሚገናኘውን የኮከብ ሮስቢ ቁጥርን ለመፈለግ ተጠቅመው ነበር።
+Back: እነሱ ይህን በመጠቀም የኮከብ ሮስቢ ቁጥርን ለመፈለግ አጠቃቀሙት፣ ይህም ከፍተኛ የብርሃን ደረጃና ከፍተኛ የዙር ደረጃ ከፕላዝማ ፍሰሰት ጋር የተያያዘ ነው።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes the use of the brightness and rotation rate to find the stellar Rossby number, which is related to plasma flow. It implies a direct relationship between these factors and the Rossby number.
+
+Sentence B, on the other hand, states that they used something to find the stellar Rossby number, which is associated with high levels of brightness and rotation rate in relation to plasma flow. It suggests that the high levels of brightness and rotation are characteristics associated with the Rossby number, but it does not explicitly state that these were the factors used to find it.
+
+The key difference is that Sentence A specifies the use of brightness and rotation rate directly in the search for the Rossby number, while Sentence B describes these as associated characteristics.
+
+[39]
+Original: ሮስቡ ቁጥሩ ባነሰ ቁጥር፣ ከመገነጢስ መገልበጥ አንጻር የኮከቡ ንቃት ይቀንሳል።
+Back: የሮስቢ ቁጥር ከታች ከሆነ፣ የኮከቡ እንቅስቃሴ ከማግኔቲክ መከላከያ ጋር አንጻር ይቀንሳል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A discusses the decrease in the activity of a star (የኮከቡ ንቃት) when the Rossby number (ሮስቡ ቁጥር) is low, in relation to magnetic dissipation (ከመገነጢስ መገልበጥ አንጻር).
+
+Sentence B, on the other hand, talks about the decrease in the activity of a star (የኮከቡ እንቅስቃሴ) when the Rossby number is low, in relation to magnetic shielding (ከማግኔቲክ መከላከያ ጋር አንጻር).
+
+The key difference lies in the terms "magnetic dissipation" in Sentence A and "magnetic shielding" in Sentence B, which refer to different physical processes.
+
+[40]
+Original: በጉዞው ላይ፣ ኢዋሳኪ በብዙ አጋጣሚዎች ላይ ችግር አጋጥሞታል።
+Back: በጉዞው ላይ፣ ኢዋሳኪ በብዙ ጊዜ ችግር ተጋጥሟል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences describe a situation where Iwasaki encountered problems during a journey. Sentence A uses "በብዙ አጋጣሚዎች ላይ" (on many occasions), while Sentence B uses "በብዙ ጊዜ" (many times), but both expressions convey the idea of frequent occurrences of problems during the journey.
+
+[41]
+Original: በባህር ላይ ወንበዴዎች ተዘርፏል፣ በቲቤት ውስጥ በእብድ ውሻ ተነክሷል፣ በኔፓል ውስጥ ከጋብቻ አምልጧል እና በህንድ ውስጥ ታስሯል።
+Back: የባሕር ወንበዴዎች በባሕር ላይ ተበተኑ፣ በቲቤት በእባክ ውሻ ተነከሳት፣ ከነፃ ጋብቻ በኔፓል ሸሽታ ነበር፣ በህንድ ውስጥ ታስረች።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A describes a series of events involving a person or entity: being scattered by pirates on the sea, being bitten by a rabid dog in Tibet, escaping from marriage in Nepal, and being imprisoned in India.
+
+Sentence B, on the other hand, describes similar events but with some differences: pirates being scattered on the sea, being bitten by a dog in Tibet (with a slight difference in the type of dog mentioned), escaping from a free marriage in Nepal, and being imprisoned in India.
+
+The differences in the type of dog and the context of marriage (free marriage vs. just marriage) contribute to the sentences not being semantically equivalent.
+
+[42]
+Original: የ 802.11n ደረጃ በሁለቱም በ 2.4 ጊኸርትዝ እና በ 5.0 ጊኸዝ ሞገድ ይሠራል።
+Back: 802.11n መደበኛ በ2.4 GHz እና 5.0 GHz ክፍሎች ላይ ይሰራል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences describe the 802.11n standard operating on two frequency bands: 2.4 GHz and 5.0 GHz. Sentence A uses the term "ደረጃ" (standard) and "ሞገድ" (wave), while Sentence B uses "መደበኛ" (standard) and "ክፍሎች" (bands). Despite the slight difference in wording, the meaning conveyed is the same: the 802.11n standard operates on both the 2.4 GHz and 5.0 GHz frequency bands.
+
+[43]
+Original: የዋና ጣቢያው ሁለት ሬዲዮዎች ሳሉት፣ ይህ ከ 802.11a ፣ 802.11b እና 802.11g ጋር ወደኋላ የሚስማማ እንዲሆን ያስችለዋል።
+Back: ዋነኛው ጣቢያ ሁለት ሬዲዮዎች አሉት፣ ይህም እንደ 802.11a፣ 802.11b፣ እና 802.11g ጋር ወደኋላ ተዛማጅ እንዲሆን ያስችላል።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences describe a main station that has two radios and mention that it is backward compatible with 802.11a, 802.11b, and 802.11g. The slight differences in wording do not change the overall meaning.
+
+[44]
+Original: የ802.11n ፍጥነቶች በፊት ከነበረው ከፍተኛ ንድፈ ሀሳባዊ 600 ሜቢ/ሰ ከሆነው እጅግ ይፈጥናል።
+Back: 802.11n ፍጥነቶች ከቀደም ያለው 600 Mbps ከፍተኛ ንድፍ በተለዋዋጭ ይፈጥናሉ።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences discuss the speeds of 802.11n, indicating that they are faster than a previously existing high standard of 600 Mbps. Sentence A uses the phrase "እጅግ ይፈጥናል" (extremely fast) to emphasize the speed, while Sentence B uses "በተለዋዋጭ ይፈጥናሉ" (relatively faster) to convey a similar meaning. Despite the slight difference in wording, both sentences convey that 802.11n speeds surpass the previous 600 Mbps benchmark.
+
+[45]
+Original: ዱቫል፣ አግብቶ ሁለት አዋቂ ልጆች ያሉት፣ በሚለር፣ ታሪኩ ከተገናኘው፣ ላይ ትልቅ ተዕጽኖ አላሳደረም።
+Back: ዱቫል ሁለት ብልህ ልጆች ቢኖሩትም በተገኘው ታሪክ ላይ አስፈላጊ ተጽዕኖ አላሳየም።
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. 
+
+Both sentences convey the idea that Duval, despite having two intelligent children, did not have a significant impact on the history he encountered. The phrasing is slightly different, but the core meaning remains the same in both sentences.
+
+[46]
+Original: ለአስተያየት ሲጠየቅ፣ በችሎቱ “ወቅት ማይክ ብዙ ያወራል... እየተዘጋጀሁ ስለነበር ምን እንደሚል እየሰማሁ አልነበረም።” አለ ሚለር።
+Back: ለአስተያየት ሲጠይቁት ሚለር እንዲህ አለ፡- "ማይክ በስብሰባው ወቅት ብዙ ይናገራል... እኔ ግን ዝግጅት ስላደረግሁ የሚናገረውን አልሰማሁም።"
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the same meaning: when asked for his opinion, Miller (or Miler) stated that Mike talks a lot during the meeting, but he (Miller) did not hear what Mike was saying because he was preparing. The slight differences in wording do not change the overall meaning of the sentences.
+
+[47]
+Original: "የካርቦን ዳይኦክሳይድ ለቀትን ለGDP እያንዳንዱ አሃድ ከ2005 አንጻር በሚታወቅ ልዩነት በ2020 ለመቀነስ እንሰራለን፣ አለ ሁ። "
+Back: "እሱ እንዳለው፣ እ.ኤ.አ. ከ2005 ጋር ተወዳደርን እስከ2020 የካርቦን ዳይኦክሳይድ ምትል በኢንዱስትሪ እንዲቀንስ እንሠራለን።"
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A states that there is a commitment to reduce carbon dioxide emissions per GDP unit by a significant margin compared to 2005 levels by the year 2020. It emphasizes the reduction in relation to GDP.
+
+Sentence B, on the other hand, mentions a commitment to reduce carbon dioxide emissions in the industry sector by 2020 compared to 2005 levels. It focuses on the reduction within the industry sector specifically.
+
+The key difference lies in the focus: Sentence A is about emissions per GDP unit, while Sentence B is about emissions in the industry sector.
+
+[48]
+Original: በቻይና የኢኮኖሚ ወጪ መሰረት ይሰራሉ በማለት ለማለፊያዎቹ ቁጥር አላስቀመጠም።
+Back: በቻይና ኢኮኖሚያቸው በእንግዲህ ላይ የተመሰረተ ነው ብለው አሉ፣ ነገር ግን ለተያያዘው ትንበር ቁጥሮችን አልገለጡም።
+Match: NO
+Explanation: NO, the two sentences are not semantically equivalent.
+
+Sentence A states that in China, they did not provide numbers for the economic expenditure basis, implying that there was an expectation or need for such numbers, but they were not presented.
+
+Sentence B, on the other hand, mentions that in China, they said their economy is based on something unspecified, but they did not clarify the related numerical figures. This sentence suggests that there was a statement about the economy's foundation, but the specific numbers were not disclosed.
+
+The key difference lies in the focus: Sentence A emphasizes the lack of numbers for economic expenditure, while Sentence B highlights a statement about the economy's foundation without providing specific numbers.
+
+[49]
+Original: ሑ ታዳጊ ሀገሮች “ውሀን አሁን በክሎ በኋላ የማጥራት መንገድን እንዲተዉ” አበረታተዋል።
+Back: እየተዳበሩ ያሉ አገሮች "ውሃ በኪሎ አሁን መለከም አለበት እንጂ በኋላ አይደለም" ብለው ጠይቀዋል።
+Match: NO
+Explanation: NO, the sentences are not semantically equivalent.
+
+Sentence A states that developing countries have emphasized that the method of measuring water should be abandoned in the future, implying a call to stop measuring water by volume (in kilos) later on.
+
+Sentence B, on the other hand, indicates that developing countries are requesting that water should be measured by volume (in kilos) now, rather than later, suggesting an immediate action rather than a future one.
+
+The key difference lies in the timing and the action being advocated: Sentence A talks about abandoning a method in the future, while Sentence B talks about implementing a method immediately.
+
+[50]
+Original: “ከእድገታቸው ደረጃ፣ ሀላፊነት እና አቅም ባለፈ ሀላፊነት እንዲወስዱ መጠየቅ የለባቸውም።” ብሎ ተናገረ።
+Back: እሱ እንዲህ አለ፣ "ከማህበራዊ እድገታቸው፣ ኃላፊነታቸው እና ችሎታቸው በላይ ኃላፊነት እንዲወስዱ መጠየቅ አይገባም።"
+Match: YES
+Explanation: YES, the two sentences are semantically equivalent. Both sentences convey the idea that it is not appropriate to ask someone to take on responsibilities beyond their level of development, responsibility, and capability. The slight differences in wording do not change the overall meaning.
+

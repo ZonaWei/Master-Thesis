@@ -1,0 +1,501 @@
+========== EXPERIMENT RESULTS ==========
+========== Language: am (amh_Ethi) ==========
+========== Language: am (amh_Ethi) ==========
+========== Language: am (amh_Ethi) ==========
+========== Language: am (amh_Ethi) ==========
+----- Training am 1k -----
+----- Training am 1k -----
+----- Training am 1k -----
+----- Training am 1k -----
+✅ Finished training am-1k
+----- Evaluating am 1k -----
+✅ Finished training am-1k
+✅ Finished training am-1k
+----- Evaluating am 1k -----
+----- Evaluating am 1k -----
+✅ Finished training am-1k
+----- Evaluating am 1k -----
+✅ Finished evaluating am-1k
+
+----- Training am 5k -----
+✅ Finished evaluating am-1k
+✅ Finished evaluating am-1k
+
+
+----- Training am 5k -----
+----- Training am 5k -----
+✅ Finished evaluating am-1k
+
+----- Training am 5k -----
+✅ Finished training am-5k
+----- Evaluating am 5k -----
+✅ Finished training am-5k
+----- Evaluating am 5k -----
+✅ Finished training am-5k
+----- Evaluating am 5k -----
+✅ Finished training am-5k
+----- Evaluating am 5k -----
+✅ Finished evaluating am-5k
+
+----- Training am 25k -----
+✅ Finished evaluating am-5k
+
+----- Training am 25k -----
+✅ Finished evaluating am-5k
+
+----- Training am 25k -----
+✅ Finished evaluating am-5k
+
+----- Training am 25k -----
+✅ Finished training am-25k
+----- Evaluating am 25k -----
+✅ Finished training am-25k
+----- Evaluating am 25k -----
+✅ Finished training am-25k
+----- Evaluating am 25k -----
+✅ Finished training am-25k
+----- Evaluating am 25k -----
+✅ Finished evaluating am-25k
+
+----- Training am 100k -----
+✅ Finished evaluating am-25k
+
+----- Training am 100k -----
+✅ Finished evaluating am-25k
+
+----- Training am 100k -----
+✅ Finished evaluating am-25k
+
+----- Training am 100k -----
+✅ Finished training am-100k
+----- Evaluating am 100k -----
+✅ Finished training am-100k
+----- Evaluating am 100k -----
+✅ Finished training am-100k
+----- Evaluating am 100k -----
+✅ Finished training am-100k
+----- Evaluating am 100k -----
+✅ Finished evaluating am-100k
+
+----- Training am 500k -----
+✅ Finished evaluating am-100k
+
+----- Training am 500k -----
+✅ Finished evaluating am-100k
+
+----- Training am 500k -----
+✅ Finished evaluating am-100k
+
+----- Training am 500k -----
+✅ Finished training am-500k
+----- Evaluating am 500k -----
+✅ Finished training am-500k
+----- Evaluating am 500k -----
+✅ Finished training am-500k
+----- Evaluating am 500k -----
+✅ Finished training am-500k
+----- Evaluating am 500k -----
+✅ Finished evaluating am-500k
+
+----- Training am 1M -----
+✅ Finished evaluating am-500k
+
+----- Training am 1M -----
+✅ Finished evaluating am-500k
+
+----- Training am 1M -----
+✅ Finished evaluating am-500k
+
+----- Training am 1M -----
+✅ Finished training am-1M
+----- Evaluating am 1M -----
+✅ Finished training am-1M
+----- Evaluating am 1M -----
+✅ Finished training am-1M
+----- Evaluating am 1M -----
+✅ Finished training am-1M
+----- Evaluating am 1M -----
+✅ Finished evaluating am-1M
+
+========== Language: sw (swh_Latn) ==========
+----- Training sw 1k -----
+✅ Finished evaluating am-1M
+
+========== Language: sw (swh_Latn) ==========
+----- Training sw 1k -----
+✅ Finished evaluating am-1M
+
+========== Language: sw (swh_Latn) ==========
+----- Training sw 1k -----
+✅ Finished evaluating am-1M
+
+========== Language: sw (swh_Latn) ==========
+----- Training sw 1k -----
+✅ Finished training sw-1k
+----- Evaluating sw 1k -----
+✅ Finished training sw-1k
+----- Evaluating sw 1k -----
+✅ Finished training sw-1k
+----- Evaluating sw 1k -----
+✅ Finished training sw-1k
+----- Evaluating sw 1k -----
+✅ Finished evaluating sw-1k
+
+----- Training sw 5k -----
+✅ Finished evaluating sw-1k
+
+----- Training sw 5k -----
+✅ Finished evaluating sw-1k
+
+----- Training sw 5k -----
+✅ Finished evaluating sw-1k
+
+----- Training sw 5k -----
+✅ Finished training sw-5k
+----- Evaluating sw 5k -----
+✅ Finished training sw-5k
+----- Evaluating sw 5k -----
+✅ Finished training sw-5k
+----- Evaluating sw 5k -----
+✅ Finished training sw-5k
+----- Evaluating sw 5k -----
+✅ Finished evaluating sw-5k
+
+----- Training sw 25k -----
+✅ Finished evaluating sw-5k
+
+----- Training sw 25k -----
+✅ Finished evaluating sw-5k
+
+----- Training sw 25k -----
+✅ Finished evaluating sw-5k
+
+----- Training sw 25k -----
+✅ Finished training sw-25k
+----- Evaluating sw 25k -----
+✅ Finished training sw-25k
+----- Evaluating sw 25k -----
+✅ Finished training sw-25k
+----- Evaluating sw 25k -----
+✅ Finished training sw-25k
+----- Evaluating sw 25k -----
+✅ Finished evaluating sw-25k
+
+----- Training sw 100k -----
+✅ Finished evaluating sw-25k
+
+----- Training sw 100k -----
+✅ Finished evaluating sw-25k
+
+----- Training sw 100k -----
+✅ Finished evaluating sw-25k
+
+----- Training sw 100k -----
+✅ Finished training sw-100k
+----- Evaluating sw 100k -----
+✅ Finished training sw-100k
+----- Evaluating sw 100k -----
+✅ Finished training sw-100k
+----- Evaluating sw 100k -----
+✅ Finished training sw-100k
+----- Evaluating sw 100k -----
+✅ Finished evaluating sw-100k
+
+----- Training sw 500k -----
+✅ Finished evaluating sw-100k
+
+----- Training sw 500k -----
+✅ Finished evaluating sw-100k
+
+----- Training sw 500k -----
+✅ Finished evaluating sw-100k
+
+----- Training sw 500k -----
+✅ Finished training sw-500k
+----- Evaluating sw 500k -----
+✅ Finished training sw-500k
+----- Evaluating sw 500k -----
+✅ Finished training sw-500k
+----- Evaluating sw 500k -----
+✅ Finished training sw-500k
+----- Evaluating sw 500k -----
+✅ Finished evaluating sw-500k
+
+----- Training sw 1M -----
+✅ Finished evaluating sw-500k
+
+----- Training sw 1M -----
+✅ Finished evaluating sw-500k
+
+----- Training sw 1M -----
+✅ Finished evaluating sw-500k
+
+----- Training sw 1M -----
+✅ Finished training sw-1M
+----- Evaluating sw 1M -----
+✅ Finished training sw-1M
+----- Evaluating sw 1M -----
+✅ Finished training sw-1M
+----- Evaluating sw 1M -----
+✅ Finished training sw-1M
+----- Evaluating sw 1M -----
+✅ Finished evaluating sw-1M
+
+========== Language: zu (zul_Latn) ==========
+----- Training zu 1k -----
+✅ Finished evaluating sw-1M
+
+========== Language: zu (zul_Latn) ==========
+----- Training zu 1k -----
+✅ Finished evaluating sw-1M
+
+========== Language: zu (zul_Latn) ==========
+----- Training zu 1k -----
+✅ Finished evaluating sw-1M
+
+========== Language: zu (zul_Latn) ==========
+----- Training zu 1k -----
+✅ Finished training zu-1k
+----- Evaluating zu 1k -----
+✅ Finished training zu-1k
+----- Evaluating zu 1k -----
+✅ Finished training zu-1k
+----- Evaluating zu 1k -----
+✅ Finished training zu-1k
+----- Evaluating zu 1k -----
+✅ Finished evaluating zu-1k
+
+----- Training zu 5k -----
+✅ Finished evaluating zu-1k
+
+----- Training zu 5k -----
+✅ Finished evaluating zu-1k
+
+----- Training zu 5k -----
+✅ Finished evaluating zu-1k
+
+----- Training zu 5k -----
+✅ Finished training zu-5k
+----- Evaluating zu 5k -----
+✅ Finished training zu-5k
+----- Evaluating zu 5k -----
+✅ Finished training zu-5k
+----- Evaluating zu 5k -----
+✅ Finished training zu-5k
+----- Evaluating zu 5k -----
+✅ Finished evaluating zu-5k
+
+----- Training zu 25k -----
+✅ Finished evaluating zu-5k
+
+----- Training zu 25k -----
+✅ Finished evaluating zu-5k
+
+----- Training zu 25k -----
+✅ Finished evaluating zu-5k
+
+----- Training zu 25k -----
+✅ Finished training zu-25k
+----- Evaluating zu 25k -----
+✅ Finished training zu-25k
+----- Evaluating zu 25k -----
+✅ Finished training zu-25k
+----- Evaluating zu 25k -----
+✅ Finished training zu-25k
+----- Evaluating zu 25k -----
+✅ Finished evaluating zu-25k
+
+----- Training zu 100k -----
+✅ Finished evaluating zu-25k
+
+----- Training zu 100k -----
+✅ Finished evaluating zu-25k
+
+----- Training zu 100k -----
+✅ Finished evaluating zu-25k
+
+----- Training zu 100k -----
+✅ Finished training zu-100k
+----- Evaluating zu 100k -----
+✅ Finished training zu-100k
+----- Evaluating zu 100k -----
+✅ Finished training zu-100k
+----- Evaluating zu 100k -----
+✅ Finished training zu-100k
+----- Evaluating zu 100k -----
+✅ Finished evaluating zu-100k
+
+----- Training zu 500k -----
+✅ Finished evaluating zu-100k
+
+----- Training zu 500k -----
+✅ Finished training zu-500k
+----- Evaluating zu 500k -----
+✅ Finished training zu-500k
+----- Evaluating zu 500k -----
+✅ Finished evaluating zu-100k
+
+----- Training zu 500k -----
+✅ Finished training zu-500k
+----- Evaluating zu 500k -----
+✅ Finished evaluating zu-100k
+
+----- Training zu 500k -----
+✅ Finished training zu-500k
+----- Evaluating zu 500k -----
+✅ Finished evaluating zu-500k
+
+----- Training zu 1M -----
+✅ Finished training zu-1M
+----- Evaluating zu 1M -----
+✅ Finished evaluating zu-500k
+✅ Finished evaluating zu-500k
+
+
+----- Training zu 1M -----
+----- Training zu 1M -----
+✅ Finished training zu-1M
+----- Evaluating zu 1M -----
+✅ Finished training zu-1M
+----- Evaluating zu 1M -----
+✅ Finished evaluating zu-500k
+
+----- Training zu 1M -----
+✅ Finished training zu-1M
+----- Evaluating zu 1M -----
+✅ Finished evaluating zu-1M
+
+========== Language: ur (urd_Arab) ==========
+----- Training ur 1k -----
+✅ Finished training ur-1k
+----- Evaluating ur 1k -----
+✅ Finished evaluating zu-1M
+
+========== Language: ur (urd_Arab) ==========
+----- Training ur 1k -----
+✅ Finished training ur-1k
+----- Evaluating ur 1k -----
+✅ Finished evaluating zu-1M
+
+========== Language: ur (urd_Arab) ==========
+----- Training ur 1k -----
+✅ Finished evaluating zu-1M
+
+========== Language: ur (urd_Arab) ==========
+----- Training ur 1k -----
+✅ Finished training ur-1k
+----- Evaluating ur 1k -----
+✅ Finished training ur-1k
+----- Evaluating ur 1k -----
+✅ Finished evaluating ur-1k
+
+----- Training ur 5k -----
+✅ Finished evaluating ur-1k
+
+----- Training ur 5k -----
+✅ Finished evaluating ur-1k
+
+----- Training ur 5k -----
+✅ Finished training ur-5k
+----- Evaluating ur 5k -----
+✅ Finished training ur-5k
+----- Evaluating ur 5k -----
+✅ Finished training ur-5k
+----- Evaluating ur 5k -----
+✅ Finished evaluating ur-1k
+
+----- Training ur 5k -----
+✅ Finished training ur-5k
+----- Evaluating ur 5k -----
+✅ Finished evaluating ur-5k
+
+----- Training ur 25k -----
+✅ Finished evaluating ur-5k
+
+----- Training ur 25k -----
+✅ Finished evaluating ur-5k
+
+----- Training ur 25k -----
+✅ Finished training ur-25k
+----- Evaluating ur 25k -----
+✅ Finished training ur-25k
+----- Evaluating ur 25k -----
+✅ Finished training ur-25k
+----- Evaluating ur 25k -----
+✅ Finished evaluating ur-5k
+
+----- Training ur 25k -----
+✅ Finished training ur-25k
+----- Evaluating ur 25k -----
+✅ Finished evaluating ur-25k
+
+----- Training ur 100k -----
+✅ Finished evaluating ur-25k
+
+----- Training ur 100k -----
+✅ Finished evaluating ur-25k
+
+----- Training ur 100k -----
+✅ Finished training ur-100k
+----- Evaluating ur 100k -----
+✅ Finished training ur-100k
+----- Evaluating ur 100k -----
+✅ Finished training ur-100k
+----- Evaluating ur 100k -----
+✅ Finished evaluating ur-25k
+
+----- Training ur 100k -----
+✅ Finished training ur-100k
+----- Evaluating ur 100k -----
+✅ Finished evaluating ur-100k
+
+----- Training ur 500k -----
+✅ Finished evaluating ur-100k
+
+----- Training ur 500k -----
+✅ Finished evaluating ur-100k
+
+----- Training ur 500k -----
+✅ Finished training ur-500k
+----- Evaluating ur 500k -----
+✅ Finished training ur-500k
+----- Evaluating ur 500k -----
+✅ Finished training ur-500k
+----- Evaluating ur 500k -----
+✅ Finished evaluating ur-100k
+
+----- Training ur 500k -----
+✅ Finished training ur-500k
+----- Evaluating ur 500k -----
+✅ Finished evaluating ur-500k
+
+----- Training ur 1M -----
+✅ Finished evaluating ur-500k
+✅ Finished evaluating ur-500k
+
+----- Training ur 1M -----
+
+----- Training ur 1M -----
+✅ Finished evaluating ur-500k
+
+----- Training ur 1M -----
+✅ Finished training ur-1M
+----- Evaluating ur 1M -----
+✅ Finished training ur-1M
+----- Evaluating ur 1M -----
+✅ Finished training ur-1M
+----- Evaluating ur 1M -----
+✅ Finished training ur-1M
+----- Evaluating ur 1M -----
+✅ Finished evaluating ur-1M
+
+========== All Experiments Completed ✅ ==========
+✅ Finished evaluating ur-1M
+
+========== All Experiments Completed ✅ ==========
+✅ Finished evaluating ur-1M
+
+========== All Experiments Completed ✅ ==========
+✅ Finished evaluating ur-1M
+
+========== All Experiments Completed ✅ ==========
