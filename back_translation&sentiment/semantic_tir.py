@@ -76,7 +76,7 @@ for r in results:
     print(f"Match:    {r['semantic_match']}")
     print(f"Reason:   {r['explanation']}")
 
-with open("sentiment_result.txt", "w", encoding="utf-8") as f:
+with open("semantic_result.txt", "w", encoding="utf-8") as f:
      for r in results:
          f.write(f"[{r['index']}]\nOriginal: {r['tir_zero_shot']}\nBack: {r['back_translation_tir']}\nMatch: {r['semantic_match']}\nExplanation: {r['explanation']}\n\n")
 
